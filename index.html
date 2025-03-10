@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
+
   </head>
 
   <body>
@@ -23,7 +23,7 @@
                   Junhyun Park
                 </p>
                 <p>I am a master student at DGIST, advised by <a href="https://surglabdgist.com/">Prof. Minho Hwang</a>. I received my Bachelor's degree in Computer Science and Electronic Engineering from DGIST in 2024.</p>
-                <p>During my undergraduate studies, I had the privilege of being advised by <a href="https://surglabdgist.com/">Prof. Minho Hwang</a> at DGIST as an undergraduate researcher. Additionally, I was advised by <a href="https://lmic.mgh.harvard.edu/">Prof. Synho Do</a> and <a href="https://scholar.google.com/citations?user=RbJDbtgAAAAJ&hl=en">Dr. Kyungsu Kim</a> during my internship at Harvard Medical School and Massachusetts General Hospital, and I continue to collaborate with them on research projects.</p>
+                <p>During my undergraduate studies, I had the privilege of being advised by <a href="https://surglabdgist.com/">Prof. Minho Hwang</a> at DGIST as an undergraduate researcher. Additionally, I was advised by <a href="https://lmic.mgh.harvard.edu/">Prof. Synho Do</a> and <a href="https://https://aibl.snu.ac.kr/">Prof. Kyungsu Kim</a> during my internship at Harvard Medical School and Massachusetts General Hospital.</p>
 
                 <p style="text-align:center">
                   <a href="mailto:sean20224@gmail.com">Email</a> &nbsp;/&nbsp;
@@ -37,27 +37,89 @@
               </td>
             </tr>
           </tbody></table>
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <h1>News</h1>
+              <ul>
+                <li><strong>[March 2025]</strong> I will be attending IEEE ICRA 2025 to present my paper, <i>"Hysteresis Compensation of Flexible Continuum Manipulator Using RGBD Sensing and Temporal Convolutional Network."</i> Looking forward to meeting everyone—let’s grab a coffee and chat. </li>
+                <li><strong>[May 2024]</strong> Our paper <i>"Integrating ChatGPT into Secure Hospital Networks: A Case Study on Improving Radiology Report Analysis"</i> has been accepted to CHIL 2024!</li>
+                <li><strong>[May 2024]</strong> Our paper <i>"Hysteresis Compensation of Flexible Continuum Manipulator using RGBD Sensing and Temporal Convolutional Network"</i> has been accepted to IEEE RA-L!</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody></table>
+
+
+
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h1>Research</h1>
                 <p>
-                  I'm interested in Robotics, deep learning, biomedical engineering, and robot automation.
+I am interested in robotics, deep learning, biomedical engineering, and robot automation. My ultimate research goal is to develop fully automated surgical robots, including diagnostic automation. In this vision, AI analyzes a patient's X-ray, MRI, or other medical images to detect anomalies and plan the surgery. Using this diagnosis, a continuum manipulator—leveraging its scar-free advantages—would navigate through natural orifices to perform the procedure autonomously. This represents the future I strive to achieve in my research.
                 </p>
-                <p>* Equal Contribution</p>
+                  <p>* states the <i>Equal Contribution</i> </p>
               </td>
             </tr>
           </tbody></table>
           <table style="width:85%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 <!--      <h2>2024</h2>-->
-      <tr onmouseout="hysteresis_stop()" onmouseover="hysteresis_start()">
-        <td style="padding:20px;width:15%;vertical-align:middle">
-<!--          <div class="one">-->
-<!--            <div class="two" id='hysteresis_img'>-->
-<!--            <img src="images/hysteresis_RAL.gif" width = 100%">-->
-<!--            Your browser does not support the video tag.-->
-<!--            </div>-->
-            <img src='images/hysteresis_RAL_demo.jpg' width=310>
+
+
+    <tr onmouseout="off_clip_stop()" onmouseover="off_clip_start()">
+        <td style="padding:20px;width:15%;vertical-align:middle; text-align:center;">
+            <img src='images/off_clip_main.png' width=400>
+        </td>
+        <td style="padding:20px;width:70%;vertical-align:top;">
+            <strong><span class="papertitle">OFF-CLIP: Improving Normal Detection Confidence in Radiology CLIP with Simple Off-Diagonal Term Auto-Adjustment</span> </strong>
+            <br>
+            <strong> Junhyun Park</strong>*, Chanyu Moon*, Donghwan Lee, Kyungsu Kim, Minho Hwang
+            <br>
+            <em>arXiv</em>, 2025
+            <br>
+<!--            <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/rcs.70014">Paper</a>-->
+<!--            /-->
+<!--            <a href="https://www.youtube.com/watch?v=oyMV0CMjlqQ">Video</a>-->
+<!--            /-->
+            <a href="https://arxiv.org/pdf/2503.01794"> arXiv </a>
+            <p></p>
+            <p>
+CLIP enables zero-shot radiology classification but struggles with normal case detection due to strict alignment, causing high false positives and negatives. We propose OFF-CLIP, which introduces an off-diagonal loss and sentence-level text filtering to improve normal detection and reduce false negatives. OFF-CLIP enhances normal classification (0.61 AUC increase on VinDr-CXR) and zero-shot anomaly localization without requiring architectural changes, proving effective for medical vision-language models.            </p>
+        </td>
+    </tr>
+
+
+    <tr onmouseout="sam_stop()" onmouseover="sam_start()">
+        <td style="padding:20px;width:15%;vertical-align:top; text-align:center; background-color: #FFFDE7;">
+            <img src='images/sam_demo_IJMRCAS.jpg' width=350>
+        </td>
+        <td style="padding:20px;width:70%;vertical-align:top; background-color: #FFFDE7 ;">
+            <strong><span class="papertitle">SAM: Semi-Active Mechanism for Extensible Continuum Manipulator and Real-time Hysteresis Compensation Control Algorithm </span> </strong>
+            <br>
+            <strong> Junhyun Park</strong>*,
+            Seonghyeok Jang*, Myeongbo Park, Hyojae Park, Jeonghyeon Yoon, Minho Hwang
+            <br>
+            <em>The International Journal of Medical Robotics and Computer Assisted Surgery (IJMRCAS)</em>, 2024
+            <br>
+            <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/rcs.70014">Paper</a>
+            /
+            <a href="https://www.youtube.com/watch?v=oyMV0CMjlqQ">Video</a>
+            /
+            <a href="https://arxiv.org/pdf/2406.18388"> arXiv </a>
+            <p></p>
+            <p>
+                We present an extensible cable-driven continuum manipulator (CDCM) with a semi-active mechanism (SAM) and a TCN-based real-time hysteresis compensation algorithm. Trained on fiducial marker and RGBD data, our controller reduces hysteresis by 69.5% in trajectory tracking and 26% in a box pointing task. SAM improves lesion access, while TCN-based compensation enhances accuracy, potentially improving surgical performance.
+            </p>
+        </td>
+    </tr>
+
+
+
+
+      <tr onmouseout="optimizing_base_stop()" onmouseover="optimizing_base_start()">
+        <td style="padding:20px;width:15%;vertical-align:top; text-align:center">
+            <img src='images/optimizing_IROS.png' width=300>
 <!--          </div>-->
           <script type="text/javascript">
             function hysteresis_start() {
@@ -71,7 +133,48 @@
 
           </script>
         </td>
-      <td style="padding:20px;width:70%;vertical-align:middle">
+      <td style="padding:20px;width:70%;vertical-align:top">
+        <strong><span class="papertitle">Optimizing Base Placement of Surgical Robot: Kinematics Data-Driven Approach by Analyzing Working Pattern </span> </strong>
+        <br> Jeonghyeon Yoon*
+        <strong> Junhyun Park</strong>*,
+        Hyojae Park, Hakyoon Lee, Sangwon Lee, Minho Hwang
+        <br>
+        <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) </em>, 2024
+        <br>
+        <a href="https://ieeexplore.ieee.org/abstract/document/10802398/">Paper</a>
+        /
+        <a href="https://www.youtube.com/watch?v=8Jq9V29cfWU">Video</a>
+        /
+        <a href="https://arxiv.org/pdf/2402.16101"> arXiv </a>
+        <p></p>
+        <p>
+      In robot-assisted minimally invasive surgery (RAMIS), optimal placement of the robot base is crucial for performance. This study introduces a machine learning approach to determine the best base pose based on the surgeon’s working pattern. By clustering recorded end-effector poses, key positions are identified, and scoring metrics address joint limits and singularities. A multi-layer perceptron regressor predicts the optimal base pose, showing a 28.2% improvement over random placement, emphasizing the need for operator-specific optimization in RAMIS.        </p>
+      </td>
+    </tr>
+
+
+      <tr onmouseout="hysteresis_stop()" onmouseover="hysteresis_start()">
+        <td style="padding:20px;width:15%;vertical-align:middle; text-align:center; background-color: #FFFDE7;">
+<!--          <div class="one">-->
+<!--            <div class="two" id='hysteresis_img'>-->
+<!--            <img src="images/hysteresis_RAL.gif" width = 100%">-->
+<!--            Your browser does not support the video tag.-->
+<!--            </div>-->
+            <img src='images/hysteresis_RAL_demo.jpg' width=350>
+<!--          </div>-->
+          <script type="text/javascript">
+            function hysteresis_start() {
+              document.getElementById('hysteresis_img').style.opacity = "1";
+            }
+
+            function hysteresis_stop() {
+              document.getElementById('hysteresis_img').style.opacity = "0";
+            }
+            nuvo_stop()
+
+          </script>
+        </td>
+      <td style="padding:20px;width:70%;vertical-align:middle;background-color: #FFFDE7 ;">
         <strong><span class="papertitle">Hysteresis Compensation of Flexible Continuum Manipulator using RGBD Sensing and Temporal Convolutional Network </span> </strong>
         <br>
         <strong> Junhyun Park</strong>*,
@@ -96,13 +199,13 @@
 
 <!--    <tr onmouseout="SKD_stop()" onmouseover="SKD_start()" bgcolor="#ffffd0">-->
     <tr onmouseout="SKD_stop()" onmouseover="SKD_start()">
-      <td style="padding:20px;width:15%;vertical-align:middle">
+      <td style="padding:20px;width:15%;vertical-align:middle; text-align:center">
 <!--        <div class="one">-->
 <!--          <div class="two" id='cat3d_image'><video  width=100% height=100% muted autoplay loop>-->
 <!--          <source src="images/cat3d.mp4" type="video/mp4">-->
 <!--          Your browser does not support the video tag.-->
 <!--          </video></div>-->
-          <img src='images/S-KD_deploy.png' width="320">
+          <img src='images/S-KD_deploy.png' width="350">
 <!--        </div>-->
         <script type="text/javascript">
           function SKD_stop() {
@@ -122,7 +225,7 @@
         <br>
         <em>Conference on Health, Inference, and Learning (CHIL)</em>, 2024
         <br>
-        <a href="https://chilconference.org/static/proceedings/2024/kim24a.pdf">Paper</a>
+        <a href="https://proceedings.mlr.press/v248/kim24a.html">Paper</a>
         /
         <a href="https://huggingface.co/spaces/junhyun01/Onpremise_LLM_Normal_Detection">Huggingface</a>
         /
