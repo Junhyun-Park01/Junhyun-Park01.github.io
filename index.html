@@ -53,120 +53,110 @@
         }
         @media (max-width: 768px) {
             .profile {
-                flex-direction: column-reverse;
+                flex-direction: column;
                 text-align: center;
             }
             .profile-text {
                 text-align: center;
             }
+            .profile img {
+                max-width: 200px; 
+            }
+        }
+        .research-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .research-table td {
+            padding: 10px;
+            vertical-align: top;
+        }
+        @media (max-width: 768px) {
+            .research-table {
+                display: block;
+            }
+            .research-table tr {
+                display: block;
+                margin-bottom: 20px;
+            }
+            .research-table td {
+                display: block;
+                text-align: center;
+                width: 100%;
+            }
+            .research-table img {
+                max-width: 90%;
+                height: auto;
+            }
         }
     </style>
 </head>
-
-  <body>
-    <table style="width:100%;max-width:1200px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;font-size: 30px;font-weight:bold">
-                  Junhyun Park
-                </p>
+<body>
+    <div class="container">
+        <div class="profile">
+            <div class="profile-text">
+                <h1 style="text-align: center;">Junhyun Park</h1>
                 <p>I am a master student at DGIST, advised by <a href="https://surglabdgist.com/">Prof. Minho Hwang</a>. I received my Bachelor's degree in Computer Science and Electronic Engineering from DGIST in 2024.</p>
                 <p>During my undergraduate studies, I had the privilege of being advised by <a href="https://surglabdgist.com/">Prof. Minho Hwang</a> at DGIST as an undergraduate researcher. Additionally, I was advised by <a href="https://lmic.mgh.harvard.edu/">Prof. Synho Do</a> and <a href="https://aibl.snu.ac.kr/">Prof. Kyungsu Kim</a> during my internship at Harvard Medical School and Massachusetts General Hospital.</p>
+                <div class="links">
+                    <a href="mailto:sean20224@gmail.com">Email</a> /
+                    <a href="data/JonBarron-CV.pdf">CV</a> /
+                    <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=88r1o00AAAAJ">Scholar</a> /
+                    <a href="https://github.com/Junhyun-Park01/">Github</a>
+                </div>
+            </div>
+            <div>
+                <img src="images/junhyunpark.jpg" alt="profile photo">
+            </div>
+        </div>
 
-                <p style="text-align:center">
-                  <a href="mailto:sean20224@gmail.com">Email</a> &nbsp;/&nbsp;
-                  <a href="data/JonBarron-CV.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=88r1o00AAAAJ">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/Junhyun-Park01/">Github</a>
-                </p>
-              </td>
-              <td style="padding:2.5%;width:37%;max-width:40%">
-                <a href="images/junhyunpark.jpg"><img style="width:75%;max-width:100%;object-fit: cover;" alt="profile photo" src="images/junhyunpark.jpg" class="hoverZoomLink"></a>
-              </td>
-            </tr>
-          </tbody></table>
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <h1>News</h1>
-              <ul>
-                <li><strong>[March 2025]</strong> I will be attending IEEE ICRA 2025 to present my paper, <i>"Hysteresis Compensation of Flexible Continuum Manipulator Using RGBD Sensing and Temporal Convolutional Network."</i> Looking forward to meeting everyone—let’s grab a coffee and chat. </li>
-               
+        <div class="news">
+            <h2>News</h2>
+            <ul>
+                <li><strong>[March 2025]</strong> I will be attending IEEE ICRA 2025 to present my paper, <i>"Hysteresis Compensation of Flexible Continuum Manipulator Using RGBD Sensing and Temporal Convolutional Network."</i> Looking forward to meeting everyone—let’s grab a coffee and chat.</li>
                 <li><strong>[May 2024]</strong> Our paper <i>"Hysteresis Compensation of Flexible Continuum Manipulator using RGBD Sensing and Temporal Convolutional Network"</i> has been accepted to IEEE RA-L!</li>
-<li><strong>[April 2024]</strong> Our paper <i>"Integrating ChatGPT into Secure Hospital Networks: A Case Study on Improving Radiology Report Analysis"</i> has been accepted to CHIL 2024!</li>
-              </ul>
-            </td>
-          </tr>
-        </tbody></table>
+                <li><strong>[April 2024]</strong> Our paper <i>"Integrating ChatGPT into Secure Hospital Networks: A Case Study on Improving Radiology Report Analysis"</i> has been accepted to CHIL 2024!</li>
+            </ul>
+        </div>
 
-
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h1>Research</h1>
-                <p>
+        <div class="research">
+            <h2>Research</h2>
+            <p>
 I am interested in robotics, deep learning, biomedical engineering, and robot automation. My ultimate research goal is to develop fully automated surgical robots, including diagnostic automation. In this vision, AI analyzes a patient's X-ray, MRI, or other medical images to detect anomalies and plan the surgery. Using this diagnosis, a continuum manipulator—leveraging its scar-free advantages—would navigate through natural orifices to perform the procedure autonomously. This represents the future I strive to achieve in my research.
-                </p>
-                  <p>* states the <i>Equal Contribution</i> </p>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:85%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-<!--      <h2>2024</h2>-->
+            </p>
+            <p>* states the <i>Equal Contribution</i> </p>
+            <table class="research-table">
 
-    <tr onmouseout="vibration_tsm_stop()" onmouseover="vibration_tsm_start()">
-        <td style="padding:20px;width:15%;vertical-align:middle; text-align:center;">
-            <img src='images/iros_tsm_vibration.png' width=300>
-        </td>
-        <td style="padding:20px;width:70%;vertical-align:top;">
-            <strong><span class="papertitle">Vibration-Assisted Hysteresis Mitigation for Achieving High Compensation Efficiency</span> </strong>
-            <br>
-            Myeongbo Park*, Chunggil An*, <strong>Junhyun Park</strong>*, Jonghyun Kang, Minho Hwang
-            <br>
-            <em>arXiv</em>, 2025
-            <br>
-<!--            <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/rcs.70014">Paper</a>-->
-<!--            /-->
-<!--            <a href="https://www.youtube.com/watch?v=oyMV0CMjlqQ">Video</a>-->
-<!--            /-->
-            <a href="https://arxiv.org/pdf/2503.02720"> arXiv </a>
-            <p></p>
-            <p>
-We introduce a vibration-assisted hysteresis compensation method for tendon-sheath mechanisms (TSMs) in minimally invasive surgery. Controlled vibration reduces friction and dead zones, improving trajectory tracking and decreasing RMSE by up to 23.41%. When combined with a Temporal Convolutional Network (TCN)-based model, it further enhances accuracy, achieving an 85.2% reduction in MAE.        </td>
-    </tr>
+                <tr>
+                    <td style ="text-align:center;"><img src="images/iros_tsm_vibration.png" width="300"></td>
+                    <td>
+                        <strong>Vibration-Assisted Hysteresis Mitigation for Achieving High Compensation Efficiency</strong>
+                        <br> Myeongbo Park*, Chunggil An*, <strong>Junhyun Park</strong>*, Jonghyun Kang, Minho Hwang
+                        <br> <em>arXiv</em>, 2025
+                        <br> <a href="https://arxiv.org/pdf/2503.02720">arXiv</a>
+                        <p>We introduce a vibration-assisted hysteresis compensation method for tendon-sheath mechanisms (TSMs) in minimally invasive surgery. Controlled vibration reduces friction and dead zones, improving trajectory tracking and decreasing RMSE by up to 23.41%. When combined with a Temporal Convolutional Network (TCN)-based model, it further enhances accuracy, achieving an 85.2% reduction in MAE.
+</p>
+                    </td>
+                </tr>
 
-    <tr onmouseout="off_clip_stop()" onmouseover="off_clip_start()">
-        <td style="padding:20px;width:15%;vertical-align:middle; text-align:center;">
-            <img src='images/off_clip_main.png' width=400>
-        </td>
-        <td style="padding:20px;width:70%;vertical-align:top;">
-            <strong><span class="papertitle">OFF-CLIP: Improving Normal Detection Confidence in Radiology CLIP with Simple Off-Diagonal Term Auto-Adjustment</span> </strong>
-            <br>
-            <strong> Junhyun Park</strong>*, Chanyu Moon*, Donghwan Lee, Kyungsu Kim, Minho Hwang
-            <br>
-            <em>arXiv</em>, 2025
-            <br>
-<!--            <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/rcs.70014">Paper</a>-->
-<!--            /-->
-<!--            <a href="https://www.youtube.com/watch?v=oyMV0CMjlqQ">Video</a>-->
-<!--            /-->
-            <a href="https://arxiv.org/pdf/2503.01794"> arXiv </a>
-            <p></p>
-            <p>
-We propose OFF-CLIP, which introduces an off-diagonal loss and sentence-level text filtering to improve normal detection and reduce false negatives. OFF-CLIP enhances normal classification (0.61 AUC increase on VinDr-CXR) and zero-shot anomaly localization without requiring architectural changes with the sota CARZero baseline.           </p>
-        </td>
-    </tr>
+                <tr>
+                    <td style ="text-align:center;"><img src="images/off_clip_main.png" width="400"></td>
+                    <td>
+                        <strong>OFF-CLIP: Improving Normal Detection Confidence in Radiology CLIP with Simple Off-Diagonal Term Auto-Adjustment</strong>
+                        <br> <strong>Junhyun Park</strong>*, Chanyu Moon*, Donghwan Lee, Kyungsu Kim, Minho Hwang
+                        <br> <em>arXiv</em>, 2025
+                        <br> <a href="https://arxiv.org/pdf/2503.01794">arXiv</a>
+                        <p>We propose OFF-CLIP, which introduces an off-diagonal loss and sentence-level text filtering to improve normal detection and reduce false negatives. OFF-CLIP enhances normal classification (0.61 AUC increase on VinDr-CXR) and zero-shot anomaly localization without requiring architectural changes with the sota CARZero baseline.    </p>
+                    </td>
+                </tr>
+ 
+               <tr>
 
 
-    <tr onmouseout="sam_stop()" onmouseover="sam_start()">
-        <td style="padding:20px;width:15%;vertical-align:top; text-align:center; background-color: #FFFDE7;">
+  <td style= "text-align:center; background-color: #FFFDE7;">
             <img src='images/sam_demo_IJMRCAS.jpg' width=350>
         </td>
-        <td style="padding:20px;width:70%;vertical-align:top; background-color: #FFFDE7 ;">
+        <td style="background-color: #FFFDE7 ;">
             <strong><span class="papertitle">SAM: Semi-Active Mechanism for Extensible Continuum Manipulator and Real-time Hysteresis Compensation Control Algorithm </span> </strong>
             <br>
             <strong> Junhyun Park</strong>*,
@@ -184,28 +174,12 @@ We propose OFF-CLIP, which introduces an off-diagonal loss and sentence-level te
                 This study present an extensible cable-driven continuum manipulator with a semi-active mechanism (SAM) and a TCN-based real-time hysteresis compensation algorithm. SAM improves lesion access, while TCN-based compensation enhances accuracy, potentially improving surgical performance
             </p>
         </td>
-    </tr>
-
-
-
-
+     </tr>
       <tr onmouseout="optimizing_base_stop()" onmouseover="optimizing_base_start()">
-        <td style="padding:20px;width:15%;vertical-align:top; text-align:center">
+        <td style ="text-align:center;">
             <img src='images/optimizing_IROS.png' width=300>
-<!--          </div>-->
-          <script type="text/javascript">
-            function hysteresis_start() {
-              document.getElementById('hysteresis_img').style.opacity = "1";
-            }
-
-            function hysteresis_stop() {
-              document.getElementById('hysteresis_img').style.opacity = "0";
-            }
-            nuvo_stop()
-
-          </script>
         </td>
-      <td style="padding:20px;width:70%;vertical-align:top">
+      <td>
         <strong><span class="papertitle">Optimizing Base Placement of Surgical Robot: Kinematics Data-Driven Approach by Analyzing Working Pattern </span> </strong>
         <br> Jeonghyeon Yoon*
         <strong> Junhyun Park</strong>*,
@@ -226,27 +200,10 @@ We propose OFF-CLIP, which introduces an off-diagonal loss and sentence-level te
 
 
       <tr onmouseout="hysteresis_stop()" onmouseover="hysteresis_start()">
-        <td style="padding:20px;width:15%;vertical-align:middle; text-align:center; background-color: #FFFDE7;">
-<!--          <div class="one">-->
-<!--            <div class="two" id='hysteresis_img'>-->
-<!--            <img src="images/hysteresis_RAL.gif" width = 100%">-->
-<!--            Your browser does not support the video tag.-->
-<!--            </div>-->
+        <td style="text-align:center; background-color: #FFFDE7;">
             <img src='images/hysteresis_RAL_demo.jpg' width=350>
-<!--          </div>-->
-          <script type="text/javascript">
-            function hysteresis_start() {
-              document.getElementById('hysteresis_img').style.opacity = "1";
-            }
-
-            function hysteresis_stop() {
-              document.getElementById('hysteresis_img').style.opacity = "0";
-            }
-            nuvo_stop()
-
-          </script>
         </td>
-      <td style="padding:20px;width:70%;vertical-align:middle;background-color: #FFFDE7 ;">
+      <td style="background-color: #FFFDE7 ;">
         <strong><span class="papertitle">Hysteresis Compensation of Flexible Continuum Manipulator using RGBD Sensing and Temporal Convolutional Network </span> </strong>
         <br>
         <strong> Junhyun Park</strong>*,
@@ -269,28 +226,12 @@ We propose OFF-CLIP, which introduces an off-diagonal loss and sentence-level te
       </td>
     </tr>
 
-<!--    <tr onmouseout="SKD_stop()" onmouseover="SKD_start()" bgcolor="#ffffd0">-->
-    <tr onmouseout="SKD_stop()" onmouseover="SKD_start()">
-      <td style="padding:20px;width:15%;vertical-align:middle; text-align:center">
-<!--        <div class="one">-->
-<!--          <div class="two" id='cat3d_image'><video  width=100% height=100% muted autoplay loop>-->
-<!--          <source src="images/cat3d.mp4" type="video/mp4">-->
-<!--          Your browser does not support the video tag.-->
-<!--          </video></div>-->
+    <tr>
+      <td style="text-align:center">
           <img src='images/S-KD_deploy.png' width="350">
-<!--        </div>-->
-        <script type="text/javascript">
-          function SKD_stop() {
-            document.getElementById('cat3d_image').style.opacity = "1";
-          }
-
-          function SKD_start() {
-            document.getElementById('cat3d_image').style.opacity = "0";
-          }
-          SKD_stop()
-        </script>
       </td>
-      <td style="padding:20px;width:70%;vertical-align:middle">
+
+      <td>
         <strong><span class="papertitle">Integrating ChatGPT into Secure Hospital Networks: A Case Study on Improving Radiology Report Analysis</span></strong>
         <br>
         Kyungsu Kim*, <strong>Junhyun Park</strong>*, Saul Langarica, Adham Mahmoud Alkhadrawi, Synho Do
@@ -312,19 +253,8 @@ We propose OFF-CLIP, which introduces an off-diagonal loss and sentence-level te
     </tr>
 
 
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-              <td style="padding:0px">
-                <br>
-                <p style="text-align:left;font-size:small;">
-                  Website template by <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-        </td>
-      </tr>
-    </table>
-  </body>
+            </table>
+        </div>
+    </div>
+</body>
 </html>
