@@ -43,8 +43,8 @@
               <h1>News</h1>
               <ul>
                 <li><strong>[March 2025]</strong> I will be attending IEEE ICRA 2025 to present my paper, <i>"Hysteresis Compensation of Flexible Continuum Manipulator Using RGBD Sensing and Temporal Convolutional Network."</i> Looking forward to meeting everyone—let’s grab a coffee and chat. </li>
-                <li><strong>[May 2024]</strong> Our paper <i>"Integrating ChatGPT into Secure Hospital Networks: A Case Study on Improving Radiology Report Analysis"</i> has been accepted to CHIL 2024!</li>
                 <li><strong>[May 2024]</strong> Our paper <i>"Hysteresis Compensation of Flexible Continuum Manipulator using RGBD Sensing and Temporal Convolutional Network"</i> has been accepted to IEEE RA-L!</li>
+                <li><strong>[April 2024]</strong> Our paper <i>"Integrating ChatGPT into Secure Hospital Networks: A Case Study on Improving Radiology Report Analysis"</i> has been accepted to CHIL 2024!</li>
               </ul>
             </td>
           </tr>
@@ -57,7 +57,7 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h1>Research</h1>
                 <p>
-I am interested in robotics, deep learning, biomedical engineering, and robot automation. My ultimate research goal is to develop fully automated surgical robots, including diagnostic automation. In this vision, AI analyzes a patient's X-ray, MRI, or other medical images to detect anomalies and plan the surgery. Using this diagnosis, a continuum manipulator—leveraging its scar-free advantages—would navigate through natural orifices to perform the procedure autonomously. This represents the future I strive to achieve in my research.
+                I am interested in robotics, deep learning, biomedical engineering, and robot automation. My ultimate research goal is to develop fully automated surgical robots, including diagnostic automation. In this vision, AI analyzes a patient's X-ray, MRI, or other medical images to detect anomalies and plan the surgery. Using this diagnosis, a continuum manipulator—leveraging its scar-free advantages—would navigate through natural orifices to perform the procedure autonomously. This represents the future I strive to achieve in my research.
                 </p>
                   <p>* states the <i>Equal Contribution</i> </p>
               </td>
@@ -65,6 +65,27 @@ I am interested in robotics, deep learning, biomedical engineering, and robot au
           </tbody></table>
           <table style="width:85%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 <!--      <h2>2024</h2>-->
+
+    <tr onmouseout="vibration_tsm_stop()" onmouseover="vibration_tsm_start()">
+        <td style="padding:20px;width:15%;vertical-align:middle; text-align:center;">
+            <img src='images/iros_tsm_vibration.png' width=300>
+        </td>
+        <td style="padding:20px;width:70%;vertical-align:top;">
+            <strong><span class="papertitle">Vibration-Assisted Hysteresis Mitigation for Achieving High Compensation Efficiency</span> </strong>
+            <br>
+            Myeongbo Park*, Chunggil An*, <strong>Junhyun Park</strong>*, Jonghyun Kang, Minho Hwang
+            <br>
+            <em>arXiv</em>, 2025
+            <br>
+<!--            <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/rcs.70014">Paper</a>-->
+<!--            /-->
+<!--            <a href="https://www.youtube.com/watch?v=oyMV0CMjlqQ">Video</a>-->
+<!--            /-->
+            <a href="https://arxiv.org/pdf/2503.01794"> arXiv </a>
+            <p></p>
+            <p>
+We introduce a vibration-assisted hysteresis compensation method for tendon-sheath mechanisms (TSMs) in minimally invasive surgery. Controlled vibration reduces friction and dead zones, improving trajectory tracking and decreasing RMSE by up to 23.41%. When combined with a Temporal Convolutional Network (TCN)-based model, it further enhances accuracy, achieving an 85.2% reduction in MAE.        </td>
+    </tr>
 
 
     <tr onmouseout="off_clip_stop()" onmouseover="off_clip_start()">
@@ -85,7 +106,7 @@ I am interested in robotics, deep learning, biomedical engineering, and robot au
             <a href="https://arxiv.org/pdf/2503.01794"> arXiv </a>
             <p></p>
             <p>
-CLIP enables zero-shot radiology classification but struggles with normal case detection due to strict alignment, causing high false positives and negatives. We propose OFF-CLIP, which introduces an off-diagonal loss and sentence-level text filtering to improve normal detection and reduce false negatives. OFF-CLIP enhances normal classification (0.61 AUC increase on VinDr-CXR) and zero-shot anomaly localization without requiring architectural changes, proving effective for medical vision-language models.            </p>
+             We propose OFF-CLIP, which introduces an off-diagonal loss and sentence-level text filtering to improve normal detection and reduce false negatives. OFF-CLIP enhances normal classification (0.61 AUC increase on VinDr-CXR) and zero-shot anomaly localization without requiring architectural changes with the sota CARZero baseline. </p>
         </td>
     </tr>
 
@@ -109,7 +130,7 @@ CLIP enables zero-shot radiology classification but struggles with normal case d
             <a href="https://arxiv.org/pdf/2406.18388"> arXiv </a>
             <p></p>
             <p>
-                We present an extensible cable-driven continuum manipulator (CDCM) with a semi-active mechanism (SAM) and a TCN-based real-time hysteresis compensation algorithm. Trained on fiducial marker and RGBD data, our controller reduces hysteresis by 69.5% in trajectory tracking and 26% in a box pointing task. SAM improves lesion access, while TCN-based compensation enhances accuracy, potentially improving surgical performance.
+                This study present an extensible cable-driven continuum manipulator with a semi-active mechanism (SAM) and a TCN-based real-time hysteresis compensation algorithm. SAM improves lesion access, while TCN-based compensation enhances accuracy, potentially improving surgical performance.
             </p>
         </td>
     </tr>
@@ -148,7 +169,7 @@ CLIP enables zero-shot radiology classification but struggles with normal case d
         <a href="https://arxiv.org/pdf/2402.16101"> arXiv </a>
         <p></p>
         <p>
-      In robot-assisted minimally invasive surgery (RAMIS), optimal placement of the robot base is crucial for performance. This study introduces a machine learning approach to determine the best base pose based on the surgeon’s working pattern. By clustering recorded end-effector poses, key positions are identified, and scoring metrics address joint limits and singularities. A multi-layer perceptron regressor predicts the optimal base pose, showing a 28.2% improvement over random placement, emphasizing the need for operator-specific optimization in RAMIS.        </p>
+      This study introduces a machine learning approach to determine the best base pose based on the surgeon’s working pattern. By clustering recorded end-effector poses, key positions are identified, and scoring metrics address joint limits and singularities.        </p>
       </td>
     </tr>
 
@@ -192,7 +213,7 @@ CLIP enables zero-shot radiology classification but struggles with normal case d
         <a href="https://arxiv.org/pdf/2402.11319"> arXiv </a>
         <p></p>
         <p>
-            This letter proposes a data-driven approach based on Deep Neural Networks (DNN) to capture these nonlinear and previous states-dependent characteristics of cable actuation. Leveraging trained TCNs, we build a control algorithm to compensate for hysteresis. Tracking tests in task space using unseen trajectories show that the proposed control algorithm reduces the average position and orientation error by 61.39% (from 13.7 mm to 5.29 mm) and 64.04% (from 31.17◦ to 11.21◦), respectively.
+            This letter proposes a data-driven approach based on TCN to capture these nonlinear and previous states-dependent characteristics of cable actuation. Leveraging trained TCNs, we build a control algorithm to compensate for hysteresis. Tracking tests in task space using unseen trajectories show that the proposed control algorithm reduces the average position and orientation error by 61.39% (from 13.7 mm to 5.29 mm) and 64.04% (from 31.17◦ to 11.21◦), respectively.
         </p>
       </td>
     </tr>
