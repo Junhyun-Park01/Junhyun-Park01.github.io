@@ -10,7 +10,8 @@
     <style>
 body {
     font-family: Arial, sans-serif;
-    font-size: 18px; /* 기본 글씨 크기 증가 */
+    font-size: 18px; /* 기본 글씨 크기 */
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     display: flex;
@@ -18,102 +19,130 @@ body {
 }
 
 h1 {
-    font-size: 32px; /* 제목 크기 증가 */
+    font-size: 36px; /* 제목 크기 증가 */
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 30px;
 }
 
 p, li, td {
     font-size: 18px;
 }
 
+strong {
+    font-size: 1.1em; /* strong 태그 강조 */
+}
+
+a {
+    font-size: 1.0em; /* strong 태그와 동일한 크기 */
+    font-weight: bold;
+    text-decoration: none;
+    color: #0077cc;
+}
+
 @media (max-width: 768px) {
     body {
-        font-size: 16px; /* 모바일에서는 살짝 줄임 */
+        font-size: 16px; /* 모바일에서는 조금 줄임 */
     }
     h1 {
-        font-size: 26px;
+        font-size: 28px;
     }
     h2 {
-        font-size: 22px;
+        font-size: 24px;
     }
 }
-        .container {
-            max-width: 1200px;
-            width: 100%;
-            padding: 20px;
-        }
-        .profile {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            gap: 20px;
-        }
-        .profile-text {
-            flex: 1;
-            min-width: 300px;
-            max-width: 600px;
-            text-align: left;
-        }
-        .profile img {
-            width: 100%;
-            max-width: 250px;
-            border-radius: 10px;
-        }
-        .links {
-            text-align: center;
-            margin-top: 10px;
-        }
-        .links a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #0077cc;
-        }
-        .news, .research {
-            margin-top: 40px;
-        }
-        @media (max-width: 768px) {
-            .profile {
-                flex-direction: column;
-                text-align: center;
-            }
-            .profile-text {
-                text-align: center;
-            }
-            .profile img {
-                max-width: 200px; 
-            }
-        }
-        .research-table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .research-table td {
-            padding: 10px;
-            vertical-align: top;
-        }
-        @media (max-width: 768px) {
-            .research-table {
-                display: block;
-            }
-            .research-table tr {
-                display: block;
-                margin-bottom: 20px;
-            }
-            .research-table td {
-                display: block;
-                text-align: center;
-                width: 100%;
-            }
-            .research-table img {
-                max-width: 90%;
-                height: auto;
-            }
-        }
+
+/* 컨테이너 스타일 */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* 프로필 섹션 */
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.profile-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    text-align: left;
+}
+
+.profile img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+/* 링크 스타일 */
+.links {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0077cc;
+}
+
+/* 연구 및 뉴스 섹션 */
+.news, .research {
+    margin-top: 40px;
+}
+
+/* 반응형 프로필 */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile-text {
+        text-align: center;
+    }
+    .profile img {
+        max-width: 200px;
+    }
+}
+
+/* 연구 테이블 스타일 */
+.research-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.research-table td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+@media (max-width: 768px) {
+    .research-table {
+        display: block;
+    }
+    .research-table tr {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .research-table td {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .research-table img {
+        max-width: 90%;
+        height: auto;
+    }
+}
     </style>
 </head>
 <body>
@@ -125,7 +154,7 @@ p, li, td {
                 <p>During my undergraduate studies, I had the privilege of being advised by <a href="https://surglabdgist.com/">Prof. Minho Hwang</a> at DGIST as an undergraduate researcher. Additionally, I was advised by <a href="https://lmic.mgh.harvard.edu/">Prof. Synho Do</a> and <a href="https://aibl.snu.ac.kr/">Prof. Kyungsu Kim</a> during my internship at Harvard Medical School and Massachusetts General Hospital.</p>
                 <div class="links">
                     <a href="mailto:sean20224@gmail.com">Email</a> /
-                    <a href="data/JonBarron-CV.pdf">CV</a> /
+                    <a href="data/Junhyun Park_CV.pdf">CV</a> /
                     <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=88r1o00AAAAJ">Scholar</a> /
                     <a href="https://github.com/Junhyun-Park01/">Github</a>
                 </div>
@@ -182,7 +211,7 @@ I am interested in robotics, deep learning, biomedical engineering, and robot au
             <img src='images/sam_demo_IJMRCAS.jpg' width=350>
         </td>
         <td style="background-color: #FFFDE7 ;">
-            <strong><span class="papertitle">SAM: Semi-Active Mechanism for Extensible Continuum Manipulator and Real-time Hysteresis Compensation Control Algorithm </span> </strong>
+            <strong>SAM: Semi-Active Mechanism for Extensible Continuum Manipulator and Real-time Hysteresis Compensation Control Algorithm </strong>
             <br>
             <strong> Junhyun Park</strong>*,
             Seonghyeok Jang*, Myeongbo Park, Hyojae Park, Jeonghyeon Yoon, Minho Hwang
@@ -205,7 +234,7 @@ I am interested in robotics, deep learning, biomedical engineering, and robot au
             <img src='images/optimizing_IROS.png' width=300>
         </td>
       <td>
-        <strong><span class="papertitle">Optimizing Base Placement of Surgical Robot: Kinematics Data-Driven Approach by Analyzing Working Pattern </span> </strong>
+        <strong>Optimizing Base Placement of Surgical Robot: Kinematics Data-Driven Approach by Analyzing Working Pattern </span> </strong>
         <br> Jeonghyeon Yoon*
         <strong> Junhyun Park</strong>*,
         Hyojae Park, Hakyoon Lee, Sangwon Lee, Minho Hwang
@@ -229,7 +258,7 @@ I am interested in robotics, deep learning, biomedical engineering, and robot au
             <img src='images/hysteresis_RAL_demo.jpg' width=350>
         </td>
       <td style="background-color: #FFFDE7 ;">
-        <strong><span class="papertitle">Hysteresis Compensation of Flexible Continuum Manipulator using RGBD Sensing and Temporal Convolutional Network </span> </strong>
+        <strong>Hysteresis Compensation of Flexible Continuum Manipulator using RGBD Sensing and Temporal Convolutional Network </span> </strong>
         <br>
         <strong> Junhyun Park</strong>*,
         Seonghyeok Jang*,
@@ -257,7 +286,7 @@ I am interested in robotics, deep learning, biomedical engineering, and robot au
       </td>
 
       <td>
-        <strong><span class="papertitle">Integrating ChatGPT into Secure Hospital Networks: A Case Study on Improving Radiology Report Analysis</span></strong>
+        <strong>Integrating ChatGPT into Secure Hospital Networks: A Case Study on Improving Radiology Report Analysis</span></strong>
         <br>
         Kyungsu Kim*, <strong>Junhyun Park</strong>*, Saul Langarica, Adham Mahmoud Alkhadrawi, Synho Do
         <br>
