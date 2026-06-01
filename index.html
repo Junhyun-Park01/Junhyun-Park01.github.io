@@ -1,367 +1,367 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Junhyun Park</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Junhyun Park">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <style>
-
-body {
-    font-family: Arial, sans-serif;
-    font-size: 18px; /* 기본 글씨 크기 */
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-h1 {
-    font-size: 36px; /* 제목 크기 증가 */
-}
-
-h2 {
-    font-size: 30px;
-}
-
-p, li, td {
-    font-size: 17px;
-}
-
-strong {
-    font-size: 1.1em; /* strong 태그 강조 */
-}
-
-a {
-    font-size: 1.0em; /* strong 태그와 동일한 크기 */
-    font-weight: bold;
-    text-decoration: none;
-    color: #0077cc;
-}
-
-@media (max-width: 768px) {
-    body {
-        font-size: 15px; /* 모바일에서는 조금 줄임 */
-    }
-    h1 {
-        font-size: 28px;
-    }
-    h2 {
-        font-size: 24px;
-    }
-}
-
-/* 컨테이너 스타일 */
-.container {
-    max-width: 1100px;
-    width: 100%;
-    padding: 20px;
-}
-
-/* 프로필 섹션 */
-.profile {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 20px;
-}
-
-.profile-text {
-    flex: 1;
-    min-width: 300px;
-    max-width: 600px;
-    text-align: left;
-}
-
-.profile img {
-    width: 100%;
-    max-width: 250px;
-    border-radius: 10px;
-}
-
-/* 링크 스타일 */
-.links {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.links a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #0077cc;
-}
-
-/* 연구 및 뉴스 섹션 */
-.news, .research {
-    margin-top: 40px;
-}
-
-/* 반응형 프로필 */
-@media (max-width: 768px) {
-    .profile {
-        flex-direction: column;
-        text-align: center;
-    }
-    .profile-text {
-        text-align: center;
-    }
-    .profile img {
-        max-width: 200px;
-    }
-}
-
-/* 연구 테이블 스타일 */
-.research-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.research-table td {
-    padding: 10px;
-    vertical-align: top;
-}
-
-@media (max-width: 768px) {
-    .research-table {
-        display: block;
-    }
-    .research-table tr {
-        display: block;
-        margin-bottom: 20px;
-    }
-    .research-table td {
-        display: block;
-        text-align: center;
-        width: 100%;
-    }
-    .research-table img {
-        max-width: 90%;
-        height: auto;
-    }
-}
-    </style>
+  <meta charset="UTF-8">
+  <title>Junhyun Park</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Junhyun Park">
+  <meta name="description" content="Junhyun Park — Researcher at DEEPNOID. Medical AI, vision-language models, surgical robotics.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
-    <div class="container">
-        <div class="profile">
-            <div class="profile-text">
-                <h1 style="text-align: center;">Junhyun Park</h1>
-                <p>I am a master student at DGIST, advised by <a href="https://surglabdgist.com/">Prof. Minho Hwang</a>. I received my Bachelor's degree in Computer Science and Electronic Engineering from DGIST in 2024.</p>
-                <p>During my undergraduate studies, I had the privilege of being advised by <a href="https://surglabdgist.com/">Prof. Minho Hwang</a> at DGIST as an undergraduate researcher. Additionally, I was advised by <a href="https://lmic.mgh.harvard.edu/">Prof. Synho Do</a> and <a href="https://aibl.snu.ac.kr/">Prof. Kyungsu Kim</a> during my internship at Harvard Medical School and Massachusetts General Hospital.</p>
-                <div class="links">
-                    <a href="mailto:sean20224@gmail.com">Email</a> /
-                    <a href="data/Junhyun Park_CV.pdf">CV</a> /
-                    <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=88r1o00AAAAJ">Scholar</a> /
-                    <a href="https://github.com/Junhyun-Park01/">Github</a>
-                </div>
-            </div>
-            <div>
-                <img src="images/junhyunpark.jpg" alt="profile photo">
-            </div>
-        </div>
 
-        <div class="news">
-            <h2>News</h2>
-            <ul>
-		<li><strong>[June 2025]</strong> Exciting news! Our paper <i>OFF-CLIP: Improving Normal Detection Confidence in Radiology CLIP with Simple Off-Diagonal Term Auto-Adjustment</i> has been early accepted to MICCAI (top 9%). In addition, our paper <i>Vibration-Assisted Hysteresis Mitigation for Achieving High Compensation Efficiency</i> has been accepted to IEEE IROS. I am honored to be the first author on both papers.</li>
-                <li><strong>[March 2025]</strong> I will be attending IEEE ICRA 2025 to present my paper, <i>"Hysteresis Compensation of Flexible Continuum Manipulator Using RGBD Sensing and Temporal Convolutional Network."</i> Looking forward to meeting everyone—let’s grab a coffee and chat.</li>
-                <li><strong>[May 2024]</strong> Our paper <i>"Hysteresis Compensation of Flexible Continuum Manipulator using RGBD Sensing and Temporal Convolutional Network"</i> has been accepted to IEEE RA-L!</li>
-                <li><strong>[April 2024]</strong> Our paper <i>"Integrating ChatGPT into Secure Hospital Networks: A Case Study on Improving Radiology Report Analysis"</i> has been accepted to CHIL 2024!</li>
-            </ul>
-        </div>
+<!-- ============================ top nav ============================ -->
+<nav class="topnav" aria-label="Section navigation">
+  <div class="topnav-inner">
+    <span class="brand">Junhyun Park</span>
+    <a href="#about">About</a>
+    <a href="#news">News</a>
+    <a href="#publications">Publications</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#awards">Awards</a>
+    <a href="#services">Services</a>
+    <a href="data/Curriculum_Vitae_Junhyun_Park.pdf">CV</a>
+  </div>
+</nav>
 
-        <div class="research">
-            <h2>Research</h2>
-            <p>
-I am interested in robotics, deep learning, biomedical engineering, and robot automation. My ultimate research goal is to develop fully automated surgical robots, including diagnostic automation. In this vision, AI analyzes a patient's X-ray, MRI, or other medical images to detect anomalies and plan the surgery. Using this diagnosis, a continuum manipulator—leveraging its scar-free advantages—would navigate through natural orifices to perform the procedure autonomously. This represents the future I strive to achieve in my research.
-            </p>
-            <p>* states the <i>Equal Contribution</i> </p>
-            <table class="research-table">
+<div class="container">
 
-                <tr>
-                    <td style ="text-align:center;">
-                        <img src="images/iros_tsm_vibration.png" width="300">
-                    </td>
-                    <td>
-                        <div style="margin-bottom:10px;">
-                        <span style="display:inline-block; background-color:#d4f4dd; color:#2e7d32; padding:6px 12px; font-size:14px; font-weight:bold; border-radius:8px; margin-right:8px;">
-                            Surgical Robotics
-                        </span>
-                        </div>
-                        <strong>Vibration-Assisted Hysteresis Mitigation for Achieving High Compensation Efficiency</strong>
-                        <br> Myeongbo Park*, Chunggil An*, <strong>Junhyun Park</strong>*, Jonghyun Kang, Minho Hwang
-		        <br> <em>IEEE/RSJ International Conference on Intelligent Robots and Systems <strong> (IROS) </strong> </em>, 2025
-                        <br> <a href="https://arxiv.org/pdf/2503.02720">arXiv</a>
-                        <p>We introduce a vibration-assisted hysteresis compensation method for tendon-sheath mechanisms. Controlled vibration reduces friction and dead zones, improving trajectory tracking. Combined with DL based hysteresis compensation methods, 85% hysteresis decreases. </p>
-                    </td>
-                </tr>
-        <tr>
-            <td style="text-align:center; background-color: #FFFEF3;">
-                <img src="images/off_clip_main.png" width="400">
-            </td>
-            <td style="background-color: #FFFEF3 ;">
-                <!-- Tags -->
-                <div style="margin-bottom:10px;">
-                    <span style="display:inline-block; background-color:#d1f0ff; color:#0077b6; padding:6px 12px; font-size:14px; font-weight:bold; border-radius:8px; margin-right:8px;">
-                        Medical AI
-                    </span>
-                    <span style="display:inline-block; background-color:#ffe6cc; color:#cc6600; padding:6px 12px; font-size:14px; font-weight:bold; border-radius:8px;">
-                        Diagnosis Automation
-                    </span>
-                </div>
-
-                <!-- Title and info -->
-                <strong>OFF-CLIP: Improving Normal Detection Confidence in Radiology CLIP with Simple Off-Diagonal Term Auto-Adjustment</strong>
-                <br> <strong>Junhyun Park</strong>*, Chanyu Moon*, Donghwan Lee, Kyungsu Kim, Minho Hwang
-                <br> <em> Medical Image Computing and Computer Assisted Intervention <strong> (MICCAI) </strong>, Early Accepted </em>, 2025
-                <br> <span style="color:#C62828;"> Top 9% Publication with Early Acceptance </span> 
-	        <br> <span style="color:#C62828;"> Top Medical AI Conference (Acceptance Rate: 30%) </span> 
-                <br> <a href="https://arxiv.org/pdf/2503.01794">arXiv</a>
-                <p>OFF-CLIP utilizes off-diagonal loss and sentence-level text filtering to improve normal detection and reduce false negatives. Enhancing zero-shot classification performance and anomaly localization. </p>
-            </td>
-        </tr>
- 
-               <tr>
-
-
-  <td style= "text-align:center; background-color: #FFFEF3;">
-            <img src='images/sam_demo_IJMRCAS.jpg' width=350>
-        </td>
-        <td style="background-color: #FFFEF3 ;">
-            <div style="margin-bottom:10px;">
-                <span style="display:inline-block; background-color:#d4f4dd; color:#2e7d32; padding:6px 12px; font-size:14px; font-weight:bold; border-radius:8px; margin-right:8px;">
-                    Surgical Robotics
-                </span>
-                <span style="display:inline-block; background-color:#ead8fb; color:#6a1b9a; padding:6px 12px; font-size:14px; font-weight:bold; border-radius:8px;">
-                    Surgery Automation
-                </span>
-            </div>
-            <strong>SAM: Semi-Active Mechanism for Extensible Continuum Manipulator and Real-time Hysteresis Compensation Control Algorithm </strong>
-            <br>
-            <strong> Junhyun Park</strong>*,
-            Seonghyeok Jang*, Myeongbo Park, Hyojae Park, Jeonghyeon Yoon, Minho Hwang
-            <br>
-            <em>The International Journal of Medical Robotics and Computer Assisted Surgery <strong> (IJMRCAS) </strong></em>, 2024
-            <br>
-            <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/rcs.70014">Paper</a>
-            /
-            <a href="https://www.youtube.com/watch?v=oyMV0CMjlqQ">Video</a>
-            /
-            <a href="https://arxiv.org/pdf/2406.18388"> arXiv </a>
-            <p></p>
-            <p>
-                This study present an extensible cable-driven continuum manipulator with a semi-active mechanism (SAM) and a TCN-based real-time hysteresis compensation algorithm. SAM improves lesion access, while TCN-based compensation enhances accuracy, potentially improving surgical performance
-            </p>
-        </td>
-     </tr>
-      <tr onmouseout="optimizing_base_stop()" onmouseover="optimizing_base_start()">
-        <td style ="text-align:center;">
-            <img src='images/optimizing_IROS.png' width=300>
-        </td>
-      <td>
-        <div style="margin-bottom:10px;">
-            <span style="display:inline-block; background-color:#d4f4dd; color:#2e7d32; padding:6px 12px; font-size:14px; font-weight:bold; border-radius:8px; margin-right:8px;">
-                Surgical Robotics
-            </span>
-        </div>
-        <strong>Optimizing Base Placement of Surgical Robot: Kinematics Data-Driven Approach by Analyzing Working Pattern </span> </strong>
-        <br> Jeonghyeon Yoon*
-        <strong> Junhyun Park</strong>*,
-        Hyojae Park, Hakyoon Lee, Sangwon Lee, Minho Hwang
-        <br>
-        <em>IEEE/RSJ International Conference on Intelligent Robots and Systems <strong> (IROS) </strong> </em>, 2024
-        <br>
-        <a href="https://ieeexplore.ieee.org/abstract/document/10802398/">Paper</a>
-        /
-        <a href="https://www.youtube.com/watch?v=8Jq9V29cfWU">Video</a>
-        /
-        <a href="https://arxiv.org/pdf/2402.16101"> arXiv </a>
-        <p></p>
-        <p>
-       This study introduces a machine learning approach to determine the best base pose based on the surgeon’s working pattern. By clustering recorded end-effector poses, key positions are identified, and scoring metrics address joint limits and singularities. </p>
-      </td>
-    </tr>
-
-
-      <tr onmouseout="hysteresis_stop()" onmouseover="hysteresis_start()">
-        <td style="text-align:center; background-color: #FFFEF3;">
-            <img src='images/hysteresis_RAL_demo.jpg' width=350>
-        </td>
-      <td style="background-color: #FFFEF3 ;">
-        <div style="margin-bottom:10px;">
-            <span style="display:inline-block; background-color:#d4f4dd; color:#2e7d32; padding:6px 12px; font-size:14px; font-weight:bold; border-radius:8px; margin-right:8px;">
-                Surgical Robotics
-            </span>
-            <span style="display:inline-block; background-color:#ead8fb; color:#6a1b9a; padding:6px 12px; font-size:14px; font-weight:bold; border-radius:8px;">
-                Surgery Automation
-            </span>
-        </div>
-        <strong>Hysteresis Compensation of Flexible Continuum Manipulator using RGBD Sensing and Temporal Convolutional Network </span> </strong>
-        <br>
-        <strong> Junhyun Park</strong>*,
-        Seonghyeok Jang*,
-        Hyojae Park,
-		Seongjun Bae,
-        Minho Hwang
-        <br>
-        <em>IEEE Robotics and Automation Letters <strong> (RA-L) </strong> </em>, 2024
-        <br>
-        <a href="https://ieeexplore.ieee.org/document/10522825">Paper</a>
-        /
-        <a href="https://www.youtube.com/watch?v=CuNvsvPsULA&t=134s">Video</a>
-        /
-        <a href="https://arxiv.org/pdf/2402.11319"> arXiv </a>
-        <p></p>
-        <p>
-           This letter proposes a data-driven approach based on TCN to capture these nonlinear and previous states-dependent characteristics of cable actuation. Leveraging trained TCNs, we build a control algorithm to compensate for hysteresis. Tracking tests in task space using unseen trajectories show that the proposed control algorithm reduces the average position and orientation error by 61.39% (from 13.7 mm to 5.29 mm) and 64.04% (from 31.17◦ to 11.21◦), respectively.
-        </p>
-      </td>
-    </tr>
-
-    <tr>
-      <td style="text-align:center">
-          <img src='images/S-KD_deploy.png' width="350">
-      </td>
-
-      <td>
-      <div style="margin-bottom:10px;">
-            <span style="display:inline-block; background-color:#d1f0ff; color:#0077b6; padding:6px 12px; font-size:14px; font-weight:bold; border-radius:8px; margin-right:8px;">
-                Medical AI
-            </span>
-            <span style="display:inline-block; background-color:#ffe6cc; color:#cc6600; padding:6px 12px; font-size:14px; font-weight:bold; border-radius:8px;">
-                Diagnosis Automation
-            </span>
-        </div>
-        <strong>Integrating ChatGPT into Secure Hospital Networks: A Case Study on Improving Radiology Report Analysis</span></strong>
-        <br>
-        Kyungsu Kim*, <strong>Junhyun Park</strong>*, Saul Langarica, Adham Mahmoud Alkhadrawi, Synho Do
-        <br>
-        <em>Conference on Health, Inference, and Learning (CHIL)</em>, 2024
-	<br> <span style="color:#C62828;"> Top Medical AI Conference (Acceptance Rate: 34%) </span>
-
-        <br>
-        <a href="https://proceedings.mlr.press/v248/kim24a.html">Paper</a>
-        /
-        <a href="https://huggingface.co/spaces/junhyun01/Onpremise_LLM_Normal_Detection">Huggingface</a>
-        /
-        <a href="https://arxiv.org/pdf/2402.09358">arXiv</a>
-        /
-        <a href="https://github.com/emr-distillation/emr_distillation">Github</a>
-        <p></p>
-        <p>
-            This study demonstrates the first in-hospital adaptation of a cloud-based AI, similar to ChatGPT, into a secure model for analyzing radiology reports, prioritizing patient data privacy. By employing a unique sentence-level knowledge distillation method through contrastive learning,we achieve over 95% accuracy in detecting anomalies.
-        </p>
-      </td>
-    </tr>
-
-
-            </table>
-        </div>
+  <!-- ============================ header ============================ -->
+  <header class="profile" id="about">
+    <div class="profile-text">
+      <h1>Junhyun Park</h1>
+      <p class="affil">Researcher, DEEPNOID &middot; M.S., DGIST (2026)</p>
+      <p>
+        I am a researcher at <a href="https://www.deepnoid.com/">DEEPNOID</a>, working on medical foundation models
+        for chest X-ray, CT, and MRI — vision-language modeling, self-supervised learning, and report generation.
+      </p>
+      <p>
+        I received my M.S. in Robotics &amp; Mechatronics Engineering and B.E. in Computer Science &amp; Electrical Engineering
+        (double major, <em>summa cum laude</em>) from <a href="https://www.dgist.ac.kr/">DGIST</a>, advised by
+        <a href="https://surglabdgist.com/">Prof. Minho Hwang</a>.
+        In summer 2023 I was an intern at Harvard Medical School / Massachusetts General Hospital, advised by
+        <a href="https://lmic.mgh.harvard.edu/">Prof. Synho Do</a> and <a href="https://aibl.snu.ac.kr/">Prof. Kyungsu Kim</a>.
+      </p>
+      <p>
+        My research aims toward fully automated surgical pipelines — AI-driven diagnosis from medical imaging,
+        coupled with continuum manipulators that navigate natural orifices to perform scar-free interventions.
+      </p>
+      <p class="links">
+        <a href="mailto:junhyunpark0507@gmail.com">Email</a>
+        <span class="sep">/</span>
+        <a href="data/Curriculum_Vitae_Junhyun_Park.pdf">CV</a>
+        <span class="sep">/</span>
+        <a href="https://scholar.google.com/citations?user=88r1o00AAAAJ">Scholar</a>
+        <span class="sep">/</span>
+        <a href="https://github.com/Junhyun-Park01/">GitHub</a>
+        <span class="sep">/</span>
+        <a href="https://orcid.org/0009-0007-5480-0029">ORCID</a>
+      </p>
     </div>
+    <div>
+      <img src="publication_images/Junhyun_2025.jpg" alt="Junhyun Park profile photo">
+    </div>
+  </header>
+
+  <!-- ============================ news ============================ -->
+  <section id="news">
+    <h2>News</h2>
+    <ul class="news">
+      <li><span class="date">Feb 2026</span> Joined <a href="https://www.deepnoid.com/">DEEPNOID</a> AI Research Lab (Multimodal Team) as a researcher, working on medical foundation models for CXR, CT, and MRI.</li>
+      <li><span class="date">Dec 2025</span> Honored to receive the <strong>Talent Award of Korea</strong> from the Minister of Education — a national award given to 100 outstanding young talents annually.</li>
+      <li><span class="date">Jun 2025</span> Our paper <em>OFF-CLIP: Improving Normal Detection Confidence in Radiology CLIP with Simple Off-Diagonal Term Auto-Adjustment</em> has been early-accepted to MICCAI (top 9%). Our paper <em>Vibration-Assisted Hysteresis Mitigation for Achieving High Compensation Efficiency</em> has also been accepted to IEEE/RSJ IROS.</li>
+      <li><span class="date">Mar 2025</span> Attending IEEE ICRA 2025 to present <em>Hysteresis Compensation of Flexible Continuum Manipulator Using RGBD Sensing and Temporal Convolutional Network.</em> Happy to grab coffee and chat.</li>
+    </ul>
+    <ul class="news news-more" hidden>
+      <li><span class="date">Jan 2025</span> Received the <strong>Best Researcher Award</strong> (top 1%) from the Department of Robotics &amp; Mechatronics Engineering, DGIST.</li>
+      <li><span class="date">May 2024</span> Our paper <em>Hysteresis Compensation of Flexible Continuum Manipulator using RGBD Sensing and Temporal Convolutional Network</em> has been accepted to IEEE RA-L.</li>
+      <li><span class="date">Apr 2024</span> Our paper <em>Integrating ChatGPT into Secure Hospital Networks: A Case Study on Improving Radiology Report Analysis</em> has been accepted to CHIL 2024.</li>
+    </ul>
+    <button type="button" class="news-toggle" aria-expanded="false" aria-controls="news-more">Show more</button>
+  </section>
+
+  <!-- ============================ publications ============================ -->
+  <section id="publications">
+    <h2>Publications</h2>
+    <p style="font-size: 14px; color: var(--muted); font-style: italic; margin: -6px 0 14px;">
+      <sup>*</sup> denotes equal contribution.
+    </p>
+
+    <h3>Journal</h3>
+    <div class="pubs">
+
+      <article class="pub">
+        <img class="thumb" src="publication_images/hysteresis_RAL_demo.jpg" alt="RA-L 2024">
+        <div>
+          <div class="tags">
+            <span class="tag tag-surg">Surgical Robotics</span>
+            <span class="tag tag-auto">Surgery Automation</span>
+          </div>
+          <span class="title">Hysteresis Compensation of Flexible Continuum Manipulator using RGBD Sensing and Temporal Convolutional Network</span>
+          <div class="authors"><span class="me">Junhyun Park</span><sup>*</sup>, Seonghyeok Jang<sup>*</sup>, Hyojae Park, Seongjun Bae, Minho Hwang</div>
+          <div class="venue">IEEE Robotics and Automation Letters (RA-L), vol. 9, no. 7, 2024</div>
+          <div class="pub-links">
+            <a href="https://ieeexplore.ieee.org/document/10522825">Paper</a> &middot;
+            <a href="https://www.youtube.com/watch?v=CuNvsvPsULA&t=134s">Video</a> &middot;
+            <a href="https://arxiv.org/pdf/2402.11319">arXiv</a>
+          </div>
+          <p class="summary">A data-driven TCN approach captures the nonlinear, history-dependent characteristics of cable actuation, enabling real-time hysteresis compensation. Reduces position error by 61.4% (13.7 → 5.29 mm) and orientation error by 64.0% (31.2° → 11.2°).</p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <img class="thumb" src="publication_images/sam_demo_IJMRCAS.jpg" alt="IJMRCAS 2024">
+        <div>
+          <div class="tags">
+            <span class="tag tag-surg">Surgical Robotics</span>
+            <span class="tag tag-auto">Surgery Automation</span>
+          </div>
+          <span class="title">SAM: Semi-Active Mechanism for Extensible Continuum Manipulator and Real-time Hysteresis Compensation Control Algorithm</span>
+          <div class="authors"><span class="me">Junhyun Park</span><sup>*</sup>, Seonghyeok Jang<sup>*</sup>, Myeongbo Park, Hyojae Park, Jeonghyeon Yoon, Minho Hwang</div>
+          <div class="venue">International Journal of Medical Robotics and Computer Assisted Surgery (IJMRCAS), 2024</div>
+          <div class="pub-links">
+            <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/rcs.70014">Paper</a> &middot;
+            <a href="https://www.youtube.com/watch?v=oyMV0CMjlqQ">Video</a> &middot;
+            <a href="https://arxiv.org/pdf/2406.18388">arXiv</a>
+          </div>
+          <p class="summary">An extensible cable-driven continuum manipulator with a semi-active mechanism (SAM) and a TCN-based real-time hysteresis compensation algorithm. SAM improves lesion access, while TCN-based compensation enhances accuracy.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <h3>Conference</h3>
+    <div class="pubs">
+
+      <article class="pub">
+        <img class="thumb" src="publication_images/off_clip_main.png" alt="OFF-CLIP MICCAI 2025">
+        <div>
+          <div class="tags">
+            <span class="tag tag-medai">Medical AI</span>
+            <span class="tag tag-diag">Diagnosis Automation</span>
+          </div>
+          <span class="title">OFF-CLIP: Improving Normal Detection Confidence in Radiology CLIP with Simple Off-Diagonal Term Auto-Adjustment</span>
+          <div class="authors"><span class="me">Junhyun Park</span><sup>*</sup>, Chanyu Moon<sup>*</sup>, Donghwan Lee, Kyungsu Kim, Minho Hwang</div>
+          <div class="venue">Medical Image Computing and Computer Assisted Intervention (MICCAI), 2025</div>
+          <div class="highlight">Early Accept — Top 9% &middot; Acceptance rate 30%</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/pdf/2503.01794">arXiv</a>
+          </div>
+          <p class="summary">OFF-CLIP uses an off-diagonal loss and sentence-level text filtering to improve normal detection and reduce false negatives, enhancing both zero-shot classification and anomaly localization.</p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <img class="thumb" src="publication_images/iros_tsm_vibration.png" alt="IROS 2025">
+        <div>
+          <div class="tags">
+            <span class="tag tag-surg">Surgical Robotics</span>
+          </div>
+          <span class="title">Vibration-Assisted Hysteresis Mitigation for Achieving High Compensation Efficiency</span>
+          <div class="authors">Myeongbo Park<sup>*</sup>, Chunggil An<sup>*</sup>, <span class="me">Junhyun Park</span><sup>*</sup>, Jonghyun Kang, Minho Hwang</div>
+          <div class="venue">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2025</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/pdf/2503.02720">arXiv</a>
+          </div>
+          <p class="summary">Controlled vibration reduces friction and dead zones in tendon-sheath mechanisms, improving trajectory tracking. Combined with DL-based hysteresis compensation, achieves 85% reduction in hysteresis.</p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <img class="thumb" src="publication_images/optimizing_IROS.png" alt="IROS 2024">
+        <div>
+          <div class="tags">
+            <span class="tag tag-surg">Surgical Robotics</span>
+          </div>
+          <span class="title">Optimizing Base Placement of Surgical Robot: Kinematics Data-Driven Approach by Analyzing Working Pattern</span>
+          <div class="authors">Jeonghyeon Yoon<sup>*</sup>, <span class="me">Junhyun Park</span><sup>*</sup>, Hyojae Park, Hakyoon Lee, Sangwon Lee, Minho Hwang</div>
+          <div class="venue">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2024</div>
+          <div class="pub-links">
+            <a href="https://ieeexplore.ieee.org/abstract/document/10802398/">Paper</a> &middot;
+            <a href="https://www.youtube.com/watch?v=8Jq9V29cfWU">Video</a> &middot;
+            <a href="https://arxiv.org/pdf/2402.16101">arXiv</a>
+          </div>
+          <p class="summary">A machine learning approach to determine the optimal robot base pose based on a surgeon's working pattern. End-effector pose clustering identifies key positions, with scoring that accounts for joint limits and singularities.</p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <img class="thumb" src="publication_images/S-KD_deploy.png" alt="CHIL 2024">
+        <div>
+          <div class="tags">
+            <span class="tag tag-medai">Medical AI</span>
+            <span class="tag tag-diag">Diagnosis Automation</span>
+          </div>
+          <span class="title">Integrating ChatGPT into Secure Hospital Networks: A Case Study on Improving Radiology Report Analysis</span>
+          <div class="authors">Kyungsu Kim<sup>*</sup>, <span class="me">Junhyun Park</span><sup>*</sup>, Saul Langarica, Adham Mahmoud Alkhadrawi, Synho Do</div>
+          <div class="venue">Conference on Health, Inference, and Learning (CHIL), 2024</div>
+          <div class="highlight">Acceptance rate 34%</div>
+          <div class="pub-links">
+            <a href="https://proceedings.mlr.press/v248/kim24a.html">Paper</a> &middot;
+            <a href="https://huggingface.co/spaces/junhyun01/Onpremise_LLM_Normal_Detection">HuggingFace</a> &middot;
+            <a href="https://arxiv.org/pdf/2402.09358">arXiv</a> &middot;
+            <a href="https://github.com/emr-distillation/emr_distillation">Code</a>
+          </div>
+          <p class="summary">The first in-hospital adaptation of a cloud-based LLM into a secure, on-premise model for radiology report analysis. A sentence-level contrastive knowledge distillation achieves &gt;95% accuracy in anomaly detection while preserving patient privacy.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <h3>Preprints</h3>
+    <div class="pubs">
+
+      <article class="pub text-only">
+        <div>
+          <div class="tags">
+            <span class="tag tag-surg">Surgical Robotics</span>
+          </div>
+          <span class="title">SSTL: Self-Sensing Tendon Loop for Hysteresis Modeling and Compensation in Tendon-Sheath Mechanisms</span>
+          <div class="authors">Myeongbo Park<sup>*</sup>, <span class="me">Junhyun Park</span><sup>*</sup>, Inayat Ullah, Chunggil An, Minho Hwang</div>
+          <div class="venue">arXiv preprint, arXiv:2605.16870, 2026</div>
+        </div>
+      </article>
+
+      <article class="pub text-only">
+        <div>
+          <div class="tags">
+            <span class="tag tag-surg">Surgical Robotics</span>
+          </div>
+          <span class="title">Markerless 6D Pose Estimation and Position-Based Visual Servoing for Endoscopic Continuum Manipulators</span>
+          <div class="authors"><span class="me">Junhyun Park</span><sup>*</sup>, Chunggil An<sup>*</sup>, Myeongbo Park, Inayat Ullah, Seonghyun Park, Minho Hwang</div>
+          <div class="venue">arXiv preprint, arXiv:2602.16365, 2026</div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============================ experience ============================ -->
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="entry">
+      <div class="left">
+        <strong>DEEPNOID</strong>, AI Research Lab — Multimodal Team<br>
+        <span class="role">Researcher (Alternative Military Service)</span><br>
+        <span class="meta">Medical foundation models for CXR, CT, and MRI: VLM, SSL, and report generation.</span>
+      </div>
+      <div class="date">Feb 2026 — Present</div>
+    </div>
+
+    <div class="entry">
+      <div class="left">
+        <strong>DGIST</strong>, Surgical Robotics and Robot Manipulation Lab<br>
+        <span class="role">Graduate / Undergraduate Researcher</span><br>
+        <span class="meta">Advisor: Prof. Minho Hwang.</span>
+      </div>
+      <div class="date">Dec 2021 — Feb 2026</div>
+    </div>
+
+    <div class="entry">
+      <div class="left">
+        <strong>Harvard Medical School</strong>, Lab of Medical Imaging and Computation<br>
+        <span class="role">Research Intern</span><br>
+        <span class="meta">Advisors: Prof. Synho Do, Dr. Kyungsu Kim.</span>
+      </div>
+      <div class="date">Jul 2023 — Aug 2023</div>
+    </div>
+
+  </section>
+
+  <!-- ============================ education ============================ -->
+  <section id="education">
+    <h2>Education</h2>
+
+    <div class="entry">
+      <div class="left">
+        <strong>Daegu Gyeongbuk Institute of Science and Technology (DGIST)</strong><br>
+        <span class="role">M.S., Robotics &amp; Mechatronics Engineering</span><br>
+        <span class="meta">Advisor: Prof. Minho Hwang &middot; GPA: 4.25 / 4.3</span>
+      </div>
+      <div class="date">Feb 2024 — Feb 2026</div>
+    </div>
+
+    <div class="entry">
+      <div class="left">
+        <strong>Daegu Gyeongbuk Institute of Science and Technology (DGIST)</strong><br>
+        <span class="role">B.E., Computer Science and Electrical Engineering (Double Major)</span><br>
+        <span class="meta">GPA: 4.07 / 4.3 (≈ 3.92 / 4.0) &middot; <em>Summa Cum Laude</em>, Valedictorian</span>
+      </div>
+      <div class="date">Feb 2020 — Feb 2024</div>
+    </div>
+  </section>
+
+  <!-- ============================ awards ============================ -->
+  <section id="awards">
+    <h2>Honors &amp; Awards</h2>
+    <ul class="clean">
+      <li><strong>Talent Award of Korea</strong>, Minister of Education — national award to 100 outstanding young talents annually. <em>(Dec 2025)</em></li>
+      <li><strong>Best Researcher Award</strong>, Dept. of RME, DGIST <em>[top 1%]</em> — one of only 2 graduate students selected. <em>(Jan 2025)</em></li>
+      <li><strong>Excellence Poster Award</strong>, Dept. of RME, DGIST. <em>(Jan 2025)</em></li>
+      <li><strong>IPESK Next Generation Engineering Researcher.</strong> <em>(Jan 2025)</em></li>
+      <li><strong>Outstanding Paper Award</strong> <em>[top 2.2%]</em>, The 18th Korea Robotics Society Annual Conference. <em>(Feb 2023)</em></li>
+      <li><strong>Korea Presidential Science Scholarship</strong>, President of Korea. <em>(Jun 2022 — Feb 2024)</em></li>
+      <li><strong>DGIST Presidential Fellowship</strong> <em>[top 1%]</em>, President of DGIST — awarded to only 2 students per cohort. <em>(Apr 2021 — Feb 2024)</em></li>
+      <li><strong>Korean College Mathematics Competition — Silver Medal</strong>, Korean Mathematical Society. <em>(Dec 2020)</em></li>
+      <li><strong>Dean's List</strong>, DGIST. <em>(Spring/Fall 2020, Spring 2021, Fall 2022, Spring/Fall 2023)</em></li>
+    </ul>
+  </section>
+
+  <!-- ============================ services ============================ -->
+  <section id="services">
+    <h2>Professional Services</h2>
+    <ul class="clean">
+      <li><strong>Reviewer:</strong> MICCAI (2025); IEEE RA-L, IEEE/RSJ IROS (2024).</li>
+      <li><strong>Teaching Assistant:</strong> Undergraduate Research Group Project (2025); Artificial Intelligence Basics (2024).</li>
+    </ul>
+  </section>
+
+  <!-- ============================ visitors ============================ -->
+  <section id="visitors">
+    <h2>Visitors</h2>
+    <div class="visitor-widget">
+      <!--
+        Paste the RevolverMaps2 embed snippet below.
+        How to get the code (no signup required for basic widget):
+          1. Visit https://www.revolvermaps2.com (successor to revolvermaps.com)
+          2. Open the Widget Gallery, pick a globe (3D globe recommended)
+          3. Pick size / color
+          4. Copy the generated <script> tag
+          5. Replace this placeholder <p> with the copied snippet.
+      -->
+      <iframe src="https://revolvermaps2.com/widget/7bff2a2b-9263-4396-8688-374e1b11a8e4"
+              width="320" height="320" style="border:0;" loading="lazy"
+              title="RevolverMaps visitor globe"></iframe>
+    </div>
+  </section>
+
+  <p class="foot">© Junhyun Park &middot; Last updated June 2026</p>
+
+</div>
+
+<script>
+  (function () {
+    const btn = document.querySelector('.news-toggle');
+    const more = document.querySelector('.news-more');
+    if (!btn || !more) return;
+    btn.addEventListener('click', function () {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      if (expanded) {
+        more.setAttribute('hidden', '');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.textContent = 'Show more';
+      } else {
+        more.removeAttribute('hidden');
+        btn.setAttribute('aria-expanded', 'true');
+        btn.textContent = 'Show less';
+      }
+    });
+  })();
+</script>
 </body>
 </html>
