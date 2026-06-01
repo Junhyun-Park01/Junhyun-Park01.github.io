@@ -43,7 +43,7 @@
         I received my M.S. in Robotics &amp; Mechatronics Engineering and B.E. in Computer Science &amp; Electrical Engineering
         (double major, <em>summa cum laude</em>) from <a href="https://www.dgist.ac.kr/">DGIST</a>, advised by
         <a href="https://surglabdgist.com/">Prof. Minho Hwang</a>.
-        In summer 2023 I was an intern at Harvard Medical School / Massachusetts General Hospital, advised by
+        In the summer of 2023, I interned at the Massachusetts General Hospital, Harvard Medical School, advised by
         <a href="https://lmic.mgh.harvard.edu/">Prof. Synho Do</a> and <a href="https://aibl.snu.ac.kr/">Prof. Kyungsu Kim</a>.
       </p>
       <p>
@@ -63,7 +63,7 @@
       </p>
     </div>
     <div>
-      <img src="publication_images/Junhyun_2025.jpg" alt="Junhyun Park profile photo">
+      <img src="publication_images/junhyun_2025.jpg" alt="Junhyun Park profile photo">
     </div>
   </header>
 
@@ -87,19 +87,34 @@
   <!-- ============================ publications ============================ -->
   <section id="publications">
     <h2>Publications</h2>
-    <p style="font-size: 14px; color: var(--muted); font-style: italic; margin: -6px 0 14px;">
+    <p style="font-size: 14px; color: var(--muted); font-style: italic; margin: -6px 0 10px;">
       <sup>*</sup> denotes equal contribution.
     </p>
+    <div class="pub-filters">
+      <div class="pub-filter pub-filter-type" role="group" aria-label="Filter publications by type">
+        <span class="filter-label">Type</span>
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="journal" aria-pressed="false">Journal</button>
+        <button type="button" data-filter="conference" aria-pressed="false">Conference</button>
+        <button type="button" data-filter="preprint" aria-pressed="false">Preprint</button>
+      </div>
+      <div class="pub-filter pub-filter-domain" role="group" aria-label="Filter publications by domain">
+        <span class="filter-label">Domain</span>
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="medai" aria-pressed="false">Medical AI</button>
+        <button type="button" data-filter="surg" aria-pressed="false">Surgical Robotics</button>
+      </div>
+    </div>
 
     <h3>Journal</h3>
     <div class="pubs">
 
-      <article class="pub">
-        <img class="thumb" src="publication_images/hysteresis_RAL_demo.jpg" alt="RA-L 2024">
+      <article class="pub" data-type="journal" data-tags="surg">
+        <img class="thumb" src="publication_images/tcn_2024.jpg" alt="RA-L 2024">
         <div>
           <div class="tags">
             <span class="tag tag-surg">Surgical Robotics</span>
-            <span class="tag tag-auto">Surgery Automation</span>
+            <span class="tag tag-hyst">Hysteresis Compensation</span>
           </div>
           <span class="title">Hysteresis Compensation of Flexible Continuum Manipulator using RGBD Sensing and Temporal Convolutional Network</span>
           <div class="authors"><span class="me">Junhyun Park</span><sup>*</sup>, Seonghyeok Jang<sup>*</sup>, Hyojae Park, Seongjun Bae, Minho Hwang</div>
@@ -113,12 +128,12 @@
         </div>
       </article>
 
-      <article class="pub">
-        <img class="thumb" src="publication_images/sam_demo_IJMRCAS.jpg" alt="IJMRCAS 2024">
+      <article class="pub" data-type="journal" data-tags="surg">
+        <img class="thumb" src="publication_images/sam_2024.jpg" alt="IJMRCAS 2024">
         <div>
           <div class="tags">
             <span class="tag tag-surg">Surgical Robotics</span>
-            <span class="tag tag-auto">Surgery Automation</span>
+            <span class="tag tag-hyst">Hysteresis Compensation</span>
           </div>
           <span class="title">SAM: Semi-Active Mechanism for Extensible Continuum Manipulator and Real-time Hysteresis Compensation Control Algorithm</span>
           <div class="authors"><span class="me">Junhyun Park</span><sup>*</sup>, Seonghyeok Jang<sup>*</sup>, Myeongbo Park, Hyojae Park, Jeonghyeon Yoon, Minho Hwang</div>
@@ -137,12 +152,12 @@
     <h3>Conference</h3>
     <div class="pubs">
 
-      <article class="pub">
-        <img class="thumb" src="publication_images/off_clip_main.png" alt="OFF-CLIP MICCAI 2025">
+      <article class="pub" data-type="conference" data-tags="medai">
+        <img class="thumb" src="publication_images/offclip_2025.png" alt="OFF-CLIP MICCAI 2025">
         <div>
           <div class="tags">
             <span class="tag tag-medai">Medical AI</span>
-            <span class="tag tag-diag">Diagnosis Automation</span>
+            <span class="tag tag-vlp">VLP</span>
           </div>
           <span class="title">OFF-CLIP: Improving Normal Detection Confidence in Radiology CLIP with Simple Off-Diagonal Term Auto-Adjustment</span>
           <div class="authors"><span class="me">Junhyun Park</span><sup>*</sup>, Chanyu Moon<sup>*</sup>, Donghwan Lee, Kyungsu Kim, Minho Hwang</div>
@@ -155,11 +170,13 @@
         </div>
       </article>
 
-      <article class="pub">
-        <img class="thumb" src="publication_images/iros_tsm_vibration.png" alt="IROS 2025">
+      <article class="pub" data-type="conference" data-tags="surg">
+        <img class="thumb" src="publication_images/vibration_2025.png" alt="IROS 2025">
         <div>
           <div class="tags">
             <span class="tag tag-surg">Surgical Robotics</span>
+            <span class="tag tag-hyst">Hysteresis Compensation</span>
+            <span class="tag tag-tsm">Tendon-Sheath Mechanism</span>
           </div>
           <span class="title">Vibration-Assisted Hysteresis Mitigation for Achieving High Compensation Efficiency</span>
           <div class="authors">Myeongbo Park<sup>*</sup>, Chunggil An<sup>*</sup>, <span class="me">Junhyun Park</span><sup>*</sup>, Jonghyun Kang, Minho Hwang</div>
@@ -171,8 +188,8 @@
         </div>
       </article>
 
-      <article class="pub">
-        <img class="thumb" src="publication_images/optimizing_IROS.png" alt="IROS 2024">
+      <article class="pub" data-type="conference" data-tags="surg">
+        <img class="thumb" src="publication_images/optimizing_2024.png" alt="IROS 2024">
         <div>
           <div class="tags">
             <span class="tag tag-surg">Surgical Robotics</span>
@@ -189,12 +206,12 @@
         </div>
       </article>
 
-      <article class="pub">
-        <img class="thumb" src="publication_images/S-KD_deploy.png" alt="CHIL 2024">
+      <article class="pub" data-type="conference" data-tags="medai">
+        <img class="thumb" src="publication_images/skd_2024.png" alt="CHIL 2024">
         <div>
           <div class="tags">
             <span class="tag tag-medai">Medical AI</span>
-            <span class="tag tag-diag">Diagnosis Automation</span>
+            <span class="tag tag-llm">LLM</span>
           </div>
           <span class="title">Integrating ChatGPT into Secure Hospital Networks: A Case Study on Improving Radiology Report Analysis</span>
           <div class="authors">Kyungsu Kim<sup>*</sup>, <span class="me">Junhyun Park</span><sup>*</sup>, Saul Langarica, Adham Mahmoud Alkhadrawi, Synho Do</div>
@@ -215,25 +232,36 @@
     <h3>Preprints</h3>
     <div class="pubs">
 
-      <article class="pub text-only">
+      <article class="pub" data-type="preprint" data-tags="surg">
+        <img class="thumb" src="publication_images/sstl_2026.png" alt="SSTL 2026">
         <div>
           <div class="tags">
             <span class="tag tag-surg">Surgical Robotics</span>
+            <span class="tag tag-hyst">Hysteresis Compensation</span>
+            <span class="tag tag-tsm">Tendon-Sheath Mechanism</span>
           </div>
           <span class="title">SSTL: Self-Sensing Tendon Loop for Hysteresis Modeling and Compensation in Tendon-Sheath Mechanisms</span>
           <div class="authors">Myeongbo Park<sup>*</sup>, <span class="me">Junhyun Park</span><sup>*</sup>, Inayat Ullah, Chunggil An, Minho Hwang</div>
           <div class="venue">arXiv preprint, arXiv:2605.16870, 2026</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/pdf/2605.16870">arXiv</a>
+          </div>
         </div>
       </article>
 
-      <article class="pub text-only">
+      <article class="pub" data-type="preprint" data-tags="surg">
+        <img class="thumb" src="publication_images/markerless_2026.png" alt="Markerless 6D Pose 2026">
         <div>
           <div class="tags">
             <span class="tag tag-surg">Surgical Robotics</span>
+            <span class="tag tag-pose">Pose Estimation</span>
           </div>
           <span class="title">Markerless 6D Pose Estimation and Position-Based Visual Servoing for Endoscopic Continuum Manipulators</span>
           <div class="authors"><span class="me">Junhyun Park</span><sup>*</sup>, Chunggil An<sup>*</sup>, Myeongbo Park, Inayat Ullah, Seonghyun Park, Minho Hwang</div>
           <div class="venue">arXiv preprint, arXiv:2602.16365, 2026</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/pdf/2602.16365">arXiv</a>
+          </div>
         </div>
       </article>
 
@@ -342,6 +370,53 @@
         btn.textContent = 'Show less';
       }
     });
+  })();
+
+  (function () {
+    const typeButtons = document.querySelectorAll('.pub-filter-type button');
+    const domainButtons = document.querySelectorAll('.pub-filter-domain button');
+    const pubs = document.querySelectorAll('#publications .pub');
+    const headers = document.querySelectorAll('#publications h3');
+    if (!typeButtons.length && !domainButtons.length) return;
+
+    let activeType = 'all';
+    let activeDomain = 'all';
+
+    function apply() {
+      pubs.forEach(function (pub) {
+        const type = pub.dataset.type || '';
+        const tags = (pub.dataset.tags || '').split(/\s+/);
+        const typeMatch = activeType === 'all' || type === activeType;
+        const domainMatch = activeDomain === 'all' || tags.indexOf(activeDomain) !== -1;
+        pub.hidden = !(typeMatch && domainMatch);
+      });
+      headers.forEach(function (h) {
+        let next = h.nextElementSibling;
+        while (next && !next.classList.contains('pubs')) next = next.nextElementSibling;
+        if (!next) return;
+        const anyVisible = Array.prototype.some.call(
+          next.querySelectorAll('.pub'),
+          function (p) { return !p.hidden; }
+        );
+        h.hidden = !anyVisible;
+        next.hidden = !anyVisible;
+      });
+    }
+
+    function bind(buttons, setter) {
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          buttons.forEach(function (b) {
+            b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
+          });
+          setter(btn.dataset.filter);
+          apply();
+        });
+      });
+    }
+
+    bind(typeButtons, function (v) { activeType = v; });
+    bind(domainButtons, function (v) { activeDomain = v; });
   })();
 </script>
 </body>

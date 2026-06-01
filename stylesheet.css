@@ -22,10 +22,22 @@
   --tag-diag-fg: #a55310;
   --tag-auto-bg: #efe2f7;
   --tag-auto-fg: #5a1788;
+  --tag-hyst-bg: #fef3d4;
+  --tag-hyst-fg: #8a5a06;
+  --tag-tsm-bg: #d6ecec;
+  --tag-tsm-fg: #155a5a;
+  --tag-vlp-bg: #f1e3f8;
+  --tag-vlp-fg: #6a1b9a;
+  --tag-llm-bg: #fde6e6;
+  --tag-llm-fg: #a02020;
+  --tag-pose-bg: #e0e7ff;
+  --tag-pose-fg: #3730a3;
   --maxw: 880px;
 }
 
 * { box-sizing: border-box; }
+
+[hidden] { display: none !important; }
 
 html { scroll-behavior: smooth; scroll-padding-top: 64px; }
 
@@ -153,12 +165,12 @@ section > h2 {
   border-bottom: 0.8px solid var(--rule-strong);
 }
 section > h3 {
-  margin: 18px 0 8px;
+  margin: 22px 0 10px;
   font-family: 'Source Serif 4', Georgia, serif;
-  font-size: 15px;
-  font-style: italic;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
   color: var(--accent);
+  letter-spacing: 0.02em;
 }
 
 /* ---------- entry rows (CV-style date on right) ---------- */
@@ -303,6 +315,55 @@ ul.news li .date {
 .tag-surg  { background: var(--tag-surg-bg);  color: var(--tag-surg-fg);  }
 .tag-diag  { background: var(--tag-diag-bg);  color: var(--tag-diag-fg);  }
 .tag-auto  { background: var(--tag-auto-bg);  color: var(--tag-auto-fg);  }
+.tag-hyst  { background: var(--tag-hyst-bg);  color: var(--tag-hyst-fg);  }
+.tag-tsm   { background: var(--tag-tsm-bg);   color: var(--tag-tsm-fg);   }
+.tag-vlp   { background: var(--tag-vlp-bg);   color: var(--tag-vlp-fg);   }
+.tag-llm   { background: var(--tag-llm-bg);   color: var(--tag-llm-fg);   }
+.tag-pose  { background: var(--tag-pose-bg);  color: var(--tag-pose-fg);  }
+
+/* ---------- publication filter ---------- */
+.pub-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 4px 0 18px;
+}
+.pub-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Inter', sans-serif;
+}
+.pub-filter .filter-label {
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  min-width: 58px;
+}
+.pub-filter button {
+  padding: 5px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 99px;
+  background: transparent;
+  font-size: 12.5px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.pub-filter button:hover {
+  color: var(--accent);
+  border-color: var(--rule-strong);
+}
+.pub-filter button[aria-pressed="true"] {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
 
 /* ---------- visitors ---------- */
 .visitor-widget {
