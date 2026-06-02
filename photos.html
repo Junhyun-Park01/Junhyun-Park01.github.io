@@ -37,17 +37,17 @@
     <div class="photo-grid">
       <figure class="photo-card">
         <img src="life_images/talent_award_korea.jpg" alt="Receiving the Talent Award of Korea from the Minister of Education" style="object-position: left center;">
-        <figcaption>Talent Award of Korea, Ministry of Education — Dec 2025 (second from left).</figcaption>
+        <figcaption><strong>Talent Award of Korea</strong>, Ministry of Education — <strong>Dec 2025</strong> (second from left).</figcaption>
       </figure>
 
       <figure class="photo-card">
         <img src="life_images/icra_2025.jpg" alt="Giving an oral presentation at IEEE ICRA 2025 in Atlanta">
-        <figcaption>Oral presentation at IEEE ICRA 2025, Atlanta (RA-L journal presentation) — Mar 2025.</figcaption>
+        <figcaption>Oral presentation at <strong>IEEE ICRA 2025</strong>, Atlanta (RA-L journal presentation) — <strong>Mar 2025</strong>.</figcaption>
       </figure>
 
       <figure class="photo-card">
         <img src="life_images/valedictorian_v2.jpg" alt="Receiving the diploma as a graduate representative at DGIST commencement">
-        <figcaption>Selected as one of two student representatives to receive the diploma on behalf of the graduating class — DGIST commencement, Feb 2024.</figcaption>
+        <figcaption>Selected as one of two student representatives to receive the diploma on behalf of the graduating class — <strong>DGIST commencement</strong>, <strong>Feb 2024</strong>.</figcaption>
       </figure>
     </div>
   </section>
@@ -55,5 +55,49 @@
   <p class="foot">© Junhyun Park &middot; <a href="index.html">Back to home</a></p>
 
 </div>
+
+<!-- ============================ lightbox ============================ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged photo">
+  <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
+  <img src="" alt="">
+  <div class="lightbox-cap"></div>
+</div>
+
+<script>
+  (function () {
+    const lb = document.getElementById('lightbox');
+    if (!lb) return;
+    const lbImg = lb.querySelector('img');
+    const lbCap = lb.querySelector('.lightbox-cap');
+    const closeBtn = lb.querySelector('.lightbox-close');
+
+    function open(src, alt, caption) {
+      lbImg.src = src;
+      lbImg.alt = alt || '';
+      lbCap.textContent = caption || '';
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function close() {
+      lb.classList.remove('open');
+      lbImg.src = '';
+      document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.photo-card img').forEach(function (img) {
+      img.addEventListener('click', function () {
+        const fig = img.closest('figure');
+        const cap = fig ? fig.querySelector('figcaption') : null;
+        open(img.currentSrc || img.src, img.alt, cap ? cap.textContent : '');
+      });
+    });
+
+    closeBtn.addEventListener('click', close);
+    lb.addEventListener('click', close);
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && lb.classList.contains('open')) close();
+    });
+  })();
+</script>
 </body>
 </html>
