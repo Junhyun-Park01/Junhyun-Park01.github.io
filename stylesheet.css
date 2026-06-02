@@ -99,7 +99,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 180px;
   gap: 32px;
-  align-items: start;
+  align-items: center;
   padding-top: 24px;
   padding-bottom: 8px;
 }
@@ -127,6 +127,8 @@ body {
   max-width: 180px;
   border-radius: 4px;
   display: block;
+  /* subtle retouch: brighter, crisper, warmer */
+  filter: brightness(1.06) contrast(1.05) saturate(1.08);
 }
 
 /* ---------- contact links ---------- */
@@ -262,7 +264,7 @@ ul.news li .date {
   display: grid;
   grid-template-columns: 200px 1fr;
   gap: 18px;
-  align-items: start;
+  align-items: center;
   padding: 4px 0;
 }
 .pub.text-only { grid-template-columns: 1fr; }
