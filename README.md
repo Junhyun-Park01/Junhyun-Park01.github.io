@@ -3,11 +3,18 @@
 Personal academic homepage of **Junhyun Park** — a researcher working on
 surgical robotics and medical AI.
 
-🔗 **Live site:** https://junhyun-park01.github.io/
+🔗 **Homepage:** https://junhyun-park01.github.io/
+📧 **Contact:** junhyunpark0507@gmail.com
+
+## Research Interests
+
+- **Surgical robotics** — continuum manipulators, hysteresis compensation, markerless pose estimation
+- **Medical AI** — vision-language models, self-supervised learning, report generation (chest X-ray, CT, MRI)
+- **Goal** — a fully automated surgical pipeline spanning diagnosis, planning, and surgical execution
 
 ## About
 
-A lightweight static site (plain HTML/CSS, no build step) hosted on GitHub Pages.
+A lightweight static site (plain HTML/CSS/JS, no build step) hosted on GitHub Pages.
 It lists publications, experience, education, awards, and a photos page.
 
 ## Structure
