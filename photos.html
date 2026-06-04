@@ -48,9 +48,8 @@
       <figure class="photo-card">
         <div class="photo-multi">
           <img src="life_images/miccai_2025_v2.jpg" alt="Presenting a poster at MICCAI 2025">
-          <img src="life_images/miccai_2025.jpg" alt="Presenting a poster at MICCAI 2025" hidden>
           <img src="life_images/miccai_2025_v3.jpg" alt="Presenting a poster at MICCAI 2025" hidden>
-          <span class="multi-badge" aria-label="3 photos"><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="15" height="15" rx="2" fill="currentColor" opacity="0.55"/><rect x="2" y="7" width="15" height="15" rx="2" fill="currentColor"/></svg>3</span>
+          <span class="multi-badge" aria-label="2 photos"><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="15" height="15" rx="2" fill="currentColor" opacity="0.55"/><rect x="2" y="7" width="15" height="15" rx="2" fill="currentColor"/></svg>2</span>
         </div>
         <figcaption>Poster presentation at <strong>MICCAI 2025</strong>, Daejeon, South Korea (OFF-CLIP) — <strong>Sep 2025</strong>.</figcaption>
       </figure>
@@ -72,7 +71,7 @@
           <img src="life_images/invivo_test_2024_v2.jpg" alt="In-vivo test of the gastrectomy robot" hidden>
           <span class="multi-badge" aria-label="2 photos"><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="15" height="15" rx="2" fill="currentColor" opacity="0.55"/><rect x="2" y="7" width="15" height="15" rx="2" fill="currentColor"/></svg>2</span>
         </div>
-        <figcaption><strong>Balloon catheter in-vivo testing</strong> (funded project) with our gastrectomy robot — <strong>Dec 2024</strong>.</figcaption>
+        <figcaption><strong>Balloon catheter in-vivo testing</strong> (funded project) — led the robot's hardware design and control as the working-level lead in our lab — <strong>Dec 2024</strong>.</figcaption>
       </figure>
 
       <figure class="photo-card">
@@ -93,7 +92,7 @@
   <img src="" alt="">
   <button type="button" class="lightbox-nav lightbox-next" aria-label="Next photo">&rsaquo;</button>
   <div class="lightbox-cap"></div>
-  <div class="lightbox-dots"></div>
+  <div class="lightbox-thumbs"></div>
 </div>
 
 <script>
@@ -102,7 +101,7 @@
     if (!lb) return;
     const lbImg = lb.querySelector('img');
     const lbCap = lb.querySelector('.lightbox-cap');
-    const lbDots = lb.querySelector('.lightbox-dots');
+    const lbThumbs = lb.querySelector('.lightbox-thumbs');
     const closeBtn = lb.querySelector('.lightbox-close');
     const prevBtn = lb.querySelector('.lightbox-prev');
     const nextBtn = lb.querySelector('.lightbox-next');
@@ -117,14 +116,21 @@
       lbImg.alt = it.alt || '';
       lbCap.textContent = caption || '';
       const multi = group.length > 1;
-      prevBtn.hidden = !multi;
-      nextBtn.hidden = !multi;
-      lbDots.innerHTML = '';
+      prevBtn.hidden = !multi || pos === 0;
+      nextBtn.hidden = !multi || pos === group.length - 1;
+      lbThumbs.innerHTML = '';
       if (multi) {
-        group.forEach(function (_, j) {
-          const d = document.createElement('span');
-          d.className = 'dot' + (j === pos ? ' active' : '');
-          lbDots.appendChild(d);
+        group.forEach(function (g, j) {
+          const t = document.createElement('img');
+          t.src = g.src;
+          t.alt = g.alt || '';
+          if (j === pos) t.className = 'active';
+          t.addEventListener('click', function (e) {
+            e.stopPropagation();
+            pos = j;
+            render();
+          });
+          lbThumbs.appendChild(t);
         });
       }
     }
@@ -143,8 +149,9 @@
       document.body.style.overflow = '';
     }
     function step(n) {
-      if (group.length < 2) return;
-      pos = (pos + n + group.length) % group.length;
+      const np = pos + n;
+      if (np < 0 || np >= group.length) return;
+      pos = np;
       render();
     }
 

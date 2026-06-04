@@ -535,18 +535,26 @@ ul.news li .date {
 .lightbox-nav:hover { opacity: 1; background: rgba(255, 255, 255, 0.22); }
 .lightbox-prev { left: 20px; }
 .lightbox-next { right: 20px; }
-.lightbox-dots {
+.lightbox-thumbs {
   display: flex;
   justify-content: center;
-  gap: 7px;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: min(92vw, 1100px);
 }
-.lightbox-dots .dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.45);
+.lightbox-thumbs img {
+  width: 58px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 3px;
+  border: 2px solid transparent;
+  box-shadow: none;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
 }
-.lightbox-dots .dot.active { background: #fff; }
+.lightbox-thumbs img:hover { opacity: 0.85; }
+.lightbox-thumbs img.active { opacity: 1; border-color: #fff; }
 
 /* active nav highlight */
 .topnav a[aria-current="page"] {
