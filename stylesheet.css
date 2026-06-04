@@ -452,6 +452,27 @@ ul.news li .date {
 }
 .photo-card img { cursor: zoom-in; }
 
+/* ---------- multi-image card (cover + count badge) ---------- */
+.photo-multi { position: relative; }
+.multi-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 7px;
+  background: rgba(20, 22, 30, 0.62);
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 11.5px;
+  font-weight: 600;
+  line-height: 1;
+  border-radius: 5px;
+  pointer-events: none;
+}
+.multi-badge svg { display: block; }
+
 /* ---------- photo lightbox ---------- */
 .lightbox {
   position: fixed;
@@ -496,6 +517,36 @@ ul.news li .date {
   opacity: 0.8;
 }
 .lightbox-close:hover { opacity: 1; }
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border: none;
+  width: 46px;
+  height: 64px;
+  font-size: 34px;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0.85;
+  border-radius: 6px;
+}
+.lightbox-nav:hover { opacity: 1; background: rgba(255, 255, 255, 0.22); }
+.lightbox-prev { left: 20px; }
+.lightbox-next { right: 20px; }
+.lightbox-dots {
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+}
+.lightbox-dots .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.45);
+}
+.lightbox-dots .dot.active { background: #fff; }
 
 /* active nav highlight */
 .topnav a[aria-current="page"] {

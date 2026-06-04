@@ -41,13 +41,32 @@
       </figure>
 
       <figure class="photo-card">
-        <img src="life_images/miccai_2025.jpg" alt="Presenting a poster at MICCAI 2025">
-        <figcaption>Poster presentation at <strong>MICCAI 2025</strong> (OFF-CLIP) — <strong>Sep 2025</strong>.</figcaption>
+        <img src="life_images/iros_2025.jpg" alt="Presenting a poster at IEEE/RSJ IROS 2025 in Hangzhou">
+        <figcaption>Poster presentation at <strong>IEEE/RSJ IROS 2025</strong>, Hangzhou, China — <strong>Oct 2025</strong>.</figcaption>
+      </figure>
+
+      <figure class="photo-card">
+        <div class="photo-multi">
+          <img src="life_images/miccai_2025_v2.jpg" alt="Presenting a poster at MICCAI 2025">
+          <img src="life_images/miccai_2025.jpg" alt="Presenting a poster at MICCAI 2025" hidden>
+          <img src="life_images/miccai_2025_v3.jpg" alt="Presenting a poster at MICCAI 2025" hidden>
+          <span class="multi-badge" aria-label="3 photos"><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="15" height="15" rx="2" fill="currentColor" opacity="0.55"/><rect x="2" y="7" width="15" height="15" rx="2" fill="currentColor"/></svg>3</span>
+        </div>
+        <figcaption>Poster presentation at <strong>MICCAI 2025</strong>, Daejeon, South Korea (OFF-CLIP) — <strong>Sep 2025</strong>.</figcaption>
       </figure>
 
       <figure class="photo-card">
         <img src="life_images/icra_2025.jpg" alt="Giving an oral presentation at IEEE ICRA 2025 in Atlanta">
         <figcaption>Oral presentation at <strong>IEEE ICRA 2025</strong>, Atlanta (RA-L journal presentation) — <strong>Mar 2025</strong>.</figcaption>
+      </figure>
+
+      <figure class="photo-card">
+        <div class="photo-multi">
+          <img src="life_images/invivo_project_2024.jpg" alt="In-vivo test of the endoluminal catheter robot">
+          <img src="life_images/invivo_test_2024_v2.jpg" alt="In-vivo test of the gastrectomy robot" hidden>
+          <span class="multi-badge" aria-label="2 photos"><svg width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="15" height="15" rx="2" fill="currentColor" opacity="0.55"/><rect x="2" y="7" width="15" height="15" rx="2" fill="currentColor"/></svg>2</span>
+        </div>
+        <figcaption><strong>In-vivo catheter project</strong> (funded) — endoluminal testing with our gastrectomy robot, <strong>2024</strong>.</figcaption>
       </figure>
 
       <figure class="photo-card">
@@ -64,8 +83,11 @@
 <!-- ============================ lightbox ============================ -->
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged photo">
   <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
+  <button type="button" class="lightbox-nav lightbox-prev" aria-label="Previous photo">&lsaquo;</button>
   <img src="" alt="">
+  <button type="button" class="lightbox-nav lightbox-next" aria-label="Next photo">&rsaquo;</button>
   <div class="lightbox-cap"></div>
+  <div class="lightbox-dots"></div>
 </div>
 
 <script>
@@ -74,33 +96,79 @@
     if (!lb) return;
     const lbImg = lb.querySelector('img');
     const lbCap = lb.querySelector('.lightbox-cap');
+    const lbDots = lb.querySelector('.lightbox-dots');
     const closeBtn = lb.querySelector('.lightbox-close');
+    const prevBtn = lb.querySelector('.lightbox-prev');
+    const nextBtn = lb.querySelector('.lightbox-next');
+    let group = [];
+    let pos = 0;
+    let caption = '';
 
-    function open(src, alt, caption) {
-      lbImg.src = src;
-      lbImg.alt = alt || '';
+    function render() {
+      const it = group[pos];
+      if (!it) return;
+      lbImg.src = it.src;
+      lbImg.alt = it.alt || '';
       lbCap.textContent = caption || '';
+      const multi = group.length > 1;
+      prevBtn.hidden = !multi;
+      nextBtn.hidden = !multi;
+      lbDots.innerHTML = '';
+      if (multi) {
+        group.forEach(function (_, j) {
+          const d = document.createElement('span');
+          d.className = 'dot' + (j === pos ? ' active' : '');
+          lbDots.appendChild(d);
+        });
+      }
+    }
+    function openGroup(items, p, cap) {
+      group = items;
+      pos = p < 0 ? 0 : p;
+      caption = cap || '';
       lb.classList.add('open');
       document.body.style.overflow = 'hidden';
+      render();
     }
     function close() {
       lb.classList.remove('open');
       lbImg.src = '';
+      group = [];
       document.body.style.overflow = '';
+    }
+    function step(n) {
+      if (group.length < 2) return;
+      pos = (pos + n + group.length) % group.length;
+      render();
     }
 
     document.querySelectorAll('.photo-card img').forEach(function (img) {
       img.addEventListener('click', function () {
         const fig = img.closest('figure');
         const cap = fig ? fig.querySelector('figcaption') : null;
-        open(img.currentSrc || img.src, img.alt, cap ? cap.textContent : '');
+        const multi = img.closest('.photo-multi');
+        let items, p;
+        if (multi) {
+          const mImgs = Array.prototype.slice.call(multi.querySelectorAll('img'));
+          items = mImgs.map(function (im) { return { src: im.src, alt: im.alt }; });
+          p = mImgs.indexOf(img);
+        } else {
+          items = [{ src: img.src, alt: img.alt }];
+          p = 0;
+        }
+        openGroup(items, p, cap ? cap.textContent : '');
       });
     });
 
     closeBtn.addEventListener('click', close);
-    lb.addEventListener('click', close);
+    prevBtn.addEventListener('click', function (e) { e.stopPropagation(); step(-1); });
+    nextBtn.addEventListener('click', function (e) { e.stopPropagation(); step(1); });
+    lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && lb.classList.contains('open')) close();
+      if (!lb.classList.contains('open')) return;
+      if (e.key === 'Escape') close();
+      else if (e.key === 'ArrowLeft') step(-1);
+      else if (e.key === 'ArrowRight') step(1);
     });
   })();
 </script>
