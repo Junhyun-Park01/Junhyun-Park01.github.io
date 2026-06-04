@@ -433,6 +433,15 @@
 
 <script>
   (function () {
+    document.addEventListener('contextmenu', function (e) {
+      if (e.target && e.target.tagName === 'IMG') e.preventDefault();
+    });
+    document.addEventListener('dragstart', function (e) {
+      if (e.target && e.target.tagName === 'IMG') e.preventDefault();
+    });
+  })();
+
+  (function () {
     const btn = document.querySelector('.news-toggle');
     const more = document.querySelector('.news-more');
     if (!btn || !more) return;

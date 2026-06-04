@@ -39,6 +39,14 @@
 
 [hidden] { display: none !important; }
 
+/* deter casual image copying (drag / select / long-press save) */
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
 html { scroll-behavior: smooth; scroll-padding-top: 72px; }
 
 /* keep anchored sections clear of the sticky top nav */
