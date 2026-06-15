@@ -32,6 +32,8 @@
   --tag-llm-fg: #a02020;
   --tag-pose-bg: #e0e7ff;
   --tag-pose-fg: #3730a3;
+  --tag-rl-bg: #fce7f3;
+  --tag-rl-fg: #9d174d;
   --maxw: 880px;
 }
 
@@ -355,6 +357,7 @@ ul.news li .date {
 .tag-vlp   { background: var(--tag-vlp-bg);   color: var(--tag-vlp-fg);   }
 .tag-llm   { background: var(--tag-llm-bg);   color: var(--tag-llm-fg);   }
 .tag-pose  { background: var(--tag-pose-bg);  color: var(--tag-pose-fg);  }
+.tag-rl    { background: var(--tag-rl-bg);    color: var(--tag-rl-fg);    }
 
 /* ---------- publication filter ---------- */
 .pub-filters {
