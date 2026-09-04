@@ -18,6 +18,7 @@
   <div class="topnav-inner">
     <span class="brand">Junhyun Park</span>
     <a href="#publications">Publications</a>
+    <a href="#challenges">Challenges</a>
     <a href="#experience">Experience</a>
     <a href="#education">Education</a>
     <a href="#awards">Awards</a>
@@ -300,6 +301,47 @@
             <a href="https://arxiv.org/pdf/2602.16365">arXiv</a>
           </div>
           <p class="summary">MarUco, a markerless 6D pose estimation framework for closed-loop control of surgical continuum manipulators using only stereo vision. A photo-realistic pseudo-rigid-body simulation pipeline generates annotated data without manual labeling, and a multi-feature fusion network with a single-pass render-and-compare refinement reaches 0.78 mm / 3.07° pose accuracy at 52.4 ms per stereo pair. In closed-loop visual servoing, it cuts mean terminal translation error to 1.8 mm — an 88% reduction over open-loop control.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============================ challenges ============================ -->
+  <section id="challenges">
+    <h2>Challenges</h2>
+    <p style="font-size: 14px; color: var(--muted); font-style: italic; margin: -6px 0 10px;">
+      MICCAI 2026 Challenge &mdash; TREAT-MMTB 2026: Transformative Research and Efficient AI
+      Technologies for Multimodal Management of Tuberculosis. Team MultimodalAI.
+    </p>
+    <div class="pubs">
+
+      <article class="pub text-only" data-tags="medai">
+        <div>
+          <div class="tags">
+            <span class="tag tag-medai">Medical AI</span>
+            <span class="tag tag-vlp">VLP</span>
+          </div>
+          <span class="title">Generalizable Tuberculosis Classification on Chest X-rays through Multi-Source Curation and Model Ensembling</span>
+          <div class="authors">Seongeun Lee, Hannah Yun, Taejin Jeong, Mingyeong Jeon, <span class="me">Junhyun Park</span>, Hyunwoong Kim, Jonggwon Park</div>
+          <div class="venue">TREAT-MMTB 2026 Challenge, Task 2: TB Diagnosis, MICCAI 2026</div>
+          <div class="highlight">2nd place</div>
+          <p class="summary">Our submission to Task 2 (TB Diagnosis) of the TREAT-MMTB 2026 challenge. A ViT-L/16 encoder adapted to chest X-rays by vision-language pretraining on MIMIC-CXR feeds an attention-pooled MLP head. Because the released data are almost perfectly separable, every design choice targets generalization under distribution shift instead of internal fit: external CXR datasets widen training, a four-model ensemble is diversified in data composition and augmentation policy, and the decision threshold is selected on a validation set drawn from external sources.</p>
+        </div>
+      </article>
+
+      <article class="pub text-only" data-tags="medai">
+        <div>
+          <div class="tags">
+            <span class="tag tag-medai">Medical AI</span>
+            <span class="tag tag-vlp">VLP</span>
+            <span class="tag tag-llm">LLM</span>
+          </div>
+          <span class="title">Detection-Gated Cavity Segmentation on Chest X-rays with Vision&ndash;Language Pretraining</span>
+          <div class="authors">Seongeun Lee, Hannah Yun, Taejin Jeong, Mingyeong Jeon, <span class="me">Junhyun Park</span>, Hyunwoong Kim, Jonggwon Park</div>
+          <div class="venue">TREAT-MMTB 2026 Challenge, Task 1: Cavity Detection and Segmentation, MICCAI 2026</div>
+          <div class="highlight">3rd place</div>
+          <p class="summary">Our submission to Task 1 (Cavity Detection and Segmentation) of the TREAT-MMTB 2026 challenge, scored by a composite of case-level detection and region Dice. With only 444 mask-labeled images available, the case-level decision is trained separately on 13,174 case-labeled chest X-rays and kept separate at inference: a cavity-presence classifier sets the case label, and the segmentation model produces a mask only for predicted positives. Both encoders are adapted by vision-language pretraining on MIMIC-CXR reports enriched with LLM-labeled cavity and tuberculosis sentences.</p>
         </div>
       </article>
 
