@@ -14,29 +14,31 @@
   --bg-soft: #fbfaf5;
   --link: #1a4fa0;
   --link-hover: #c0651a;
-  --tag-medai-bg: #e3f0fa;
-  --tag-medai-fg: #0a5d8a;
-  --tag-surg-bg: #e3f1e6;
-  --tag-surg-fg: #1f5a2e;
-  --tag-diag-bg: #fbe7d3;
-  --tag-diag-fg: #a55310;
-  --tag-auto-bg: #efe2f7;
-  --tag-auto-fg: #5a1788;
-  --tag-hyst-bg: #fef3d4;
-  --tag-hyst-fg: #8a5a06;
-  --tag-tsm-bg: #d6ecec;
-  --tag-tsm-fg: #155a5a;
-  --tag-vlp-bg: #f1e3f8;
-  --tag-vlp-fg: #6a1b9a;
-  --tag-llm-bg: #fde6e6;
-  --tag-llm-fg: #a02020;
-  --tag-pose-bg: #e0e7ff;
-  --tag-pose-fg: #3730a3;
-  --tag-rl-bg: #fce7f3;
-  --tag-rl-fg: #9d174d;
-  --tag-vlm-bg: #cffafe;
-  --tag-vlm-fg: #0e7490;
-  --maxw: 880px;
+  --tag-medai-bg: #e6eef6;
+  --tag-medai-fg: #1c5578;
+  --tag-surg-bg: #e7efe9;
+  --tag-surg-fg: #2b5638;
+  --tag-neutral-bg: #eeeef2;
+  --tag-neutral-fg: #55596a;
+  --tag-diag-bg: var(--tag-neutral-bg);
+  --tag-diag-fg: var(--tag-neutral-fg);
+  --tag-auto-bg: var(--tag-neutral-bg);
+  --tag-auto-fg: var(--tag-neutral-fg);
+  --tag-hyst-bg: var(--tag-neutral-bg);
+  --tag-hyst-fg: var(--tag-neutral-fg);
+  --tag-tsm-bg: var(--tag-neutral-bg);
+  --tag-tsm-fg: var(--tag-neutral-fg);
+  --tag-vlp-bg: var(--tag-neutral-bg);
+  --tag-vlp-fg: var(--tag-neutral-fg);
+  --tag-llm-bg: var(--tag-neutral-bg);
+  --tag-llm-fg: var(--tag-neutral-fg);
+  --tag-pose-bg: var(--tag-neutral-bg);
+  --tag-pose-fg: var(--tag-neutral-fg);
+  --tag-rl-bg: var(--tag-neutral-bg);
+  --tag-rl-fg: var(--tag-neutral-fg);
+  --tag-vlm-bg: var(--tag-neutral-bg);
+  --tag-vlm-fg: var(--tag-neutral-fg);
+  --maxw: 1000px;
 }
 
 * { box-sizing: border-box; }
@@ -290,7 +292,7 @@ ul.news li .date {
   display: grid;
   grid-template-columns: 240px 1fr;
   gap: 18px;
-  align-items: center;
+  align-items: start;
   padding: 4px 0;
 }
 .pub.text-only { grid-template-columns: 1fr; }
