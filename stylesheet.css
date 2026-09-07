@@ -150,21 +150,23 @@ body {
 
 /* ---------- contact links ---------- */
 .links {
-  margin-top: 10px;
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.links .ico {
+  display: inline-flex;
   color: var(--muted);
+  transition: color 0.15s;
 }
-.links a {
-  color: var(--link);
-  text-decoration: none;
-  font-weight: 500;
+.links .ico svg {
+  width: 19px;
+  height: 19px;
+  fill: currentColor;
+  display: block;
 }
-.links a:hover { color: var(--link-hover); }
-.sep {
-  color: var(--rule-strong);
-  margin: 0 0.45em;
-}
+.links .ico:hover { color: var(--link-hover); }
 
 /* ---------- generic links ---------- */
 a { color: var(--link); text-decoration: none; }
