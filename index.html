@@ -18,6 +18,7 @@
   <div class="topnav-inner">
     <span class="brand">Junhyun Park</span>
     <a href="#publications">Publications</a>
+    <a href="#challenges">Challenges</a>
     <a href="#experience">Experience</a>
     <a href="#education">Education</a>
     <a href="#awards">Awards</a>
@@ -96,7 +97,6 @@
         <button type="button" data-filter="journal" aria-pressed="false">Journal</button>
         <button type="button" data-filter="conference" aria-pressed="false">Conference</button>
         <button type="button" data-filter="preprint" aria-pressed="false">Preprint</button>
-        <button type="button" data-filter="challenge" aria-pressed="false">Challenge</button>
       </div>
       <div class="pub-filter pub-filter-domain" role="group" aria-label="Filter publications by domain">
         <span class="filter-label">Domain</span>
@@ -305,40 +305,28 @@
       </article>
 
     </div>
+  </section>
 
-    <h3>Challenges</h3>
-    <div class="pubs">
+  <!-- ============================ challenges ============================ -->
+  <section id="challenges">
+    <h2>Challenges</h2>
 
-      <article class="pub text-only" data-type="challenge" data-tags="medai">
-        <div>
-          <div class="tags">
-            <span class="tag tag-medai">Medical AI</span>
-            <span class="tag tag-vlp">VLP</span>
-          </div>
-          <span class="title">Generalizable Tuberculosis Classification on Chest X-rays through Multi-Source Curation and Model Ensembling</span>
-          <div class="authors">Seongeun Lee, Hannah Yun, Taejin Jeong, Mingyeong Jeon, <span class="me">Junhyun Park</span>, Hyunwoong Kim, Jonggwon Park</div>
-          <div class="venue">TREAT-MMTB 2026 Challenge, Task 2: TB Diagnosis, MICCAI 2026</div>
-          <div class="highlight">2nd place</div>
-          <p class="summary">Our submission to Task 2 (TB Diagnosis) of the TREAT-MMTB 2026 challenge. A ViT-L/16 encoder adapted to chest X-rays by vision-language pretraining on MIMIC-CXR feeds an attention-pooled MLP head. Because the released data are almost perfectly separable, every design choice targets generalization under distribution shift instead of internal fit: external CXR datasets widen training, a four-model ensemble is diversified in data composition and augmentation policy, and the decision threshold is selected on a validation set drawn from external sources.</p>
-        </div>
-      </article>
-
-      <article class="pub text-only" data-type="challenge" data-tags="medai">
-        <div>
-          <div class="tags">
-            <span class="tag tag-medai">Medical AI</span>
-            <span class="tag tag-vlp">VLP</span>
-            <span class="tag tag-llm">LLM</span>
-          </div>
-          <span class="title">Detection-Gated Cavity Segmentation on Chest X-rays with Vision&ndash;Language Pretraining</span>
-          <div class="authors">Seongeun Lee, Hannah Yun, Taejin Jeong, Mingyeong Jeon, <span class="me">Junhyun Park</span>, Hyunwoong Kim, Jonggwon Park</div>
-          <div class="venue">TREAT-MMTB 2026 Challenge, Task 1: Cavity Detection and Segmentation, MICCAI 2026</div>
-          <div class="highlight">3rd place</div>
-          <p class="summary">Our submission to Task 1 (Cavity Detection and Segmentation) of the TREAT-MMTB 2026 challenge, scored by a composite of case-level detection and region Dice. With only 444 mask-labeled images available, the case-level decision is trained separately on 13,174 case-labeled chest X-rays and kept separate at inference: a cavity-presence classifier sets the case label, and the segmentation model produces a mask only for predicted positives. Both encoders are adapted by vision-language pretraining on MIMIC-CXR reports enriched with LLM-labeled cavity and tuberculosis sentences.</p>
-        </div>
-      </article>
-
+    <div class="entry">
+      <div class="left">
+        <strong>TREAT-MMTB 2026</strong>, MICCAI &mdash; Task 2: TB Diagnosis <span class="rank place">2nd place</span>
+        <br><span class="meta"><a href="https://openreview.net/forum?id=CZZCTepmMj">Paper</a></span>
+      </div>
+      <div class="date">Aug 2026</div>
     </div>
+
+    <div class="entry">
+      <div class="left">
+        <strong>TREAT-MMTB 2026</strong>, MICCAI &mdash; Task 1: Cavity Detection and Segmentation <span class="rank place">3rd place</span>
+        <br><span class="meta"><a href="https://openreview.net/forum?id=VMeKa1iJwV">Paper</a></span>
+      </div>
+      <div class="date">Aug 2026</div>
+    </div>
+
   </section>
 
   <!-- ============================ experience ============================ -->
