@@ -145,7 +145,7 @@ body {
   border-radius: 4px;
   display: block;
   /* subtle retouch: brighter, crisper, warmer */
-  filter: brightness(1.06) contrast(1.05) saturate(1.08);
+  filter: brightness(1.13) contrast(1.03) saturate(1.06);
 }
 
 /* ---------- contact links ---------- */
@@ -153,7 +153,7 @@ body {
   margin-top: 12px;
   display: flex;
   align-items: center;
-  gap: 17px;
+  gap: 19px;
 }
 .links .ico {
   display: inline-flex;
@@ -161,8 +161,8 @@ body {
   transition: color 0.15s;
 }
 .links .ico svg {
-  width: 19px;
-  height: 19px;
+  width: 22px;
+  height: 22px;
   fill: currentColor;
   display: block;
 }
