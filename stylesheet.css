@@ -119,11 +119,15 @@ body {
   display: grid;
   grid-template-columns: 1fr 180px;
   gap: 32px;
-  align-items: center;
+  align-items: start;
   max-width: var(--maxw);
   margin: 0 auto;
   padding: 0 28px;
 }
+/* Align the photo's top edge with the first body paragraph.
+   100px = name block (59 + 6) + affiliation block (23 + 12).
+   Adjust if either type size or margin changes. */
+.profile-text + div { margin-top: 100px; }
 .band {
   background: linear-gradient(135deg, var(--band-a) 0%, var(--band-b) 55%, var(--band-c) 100%);
   color: #eef1f7;
@@ -633,6 +637,7 @@ ul.news li .date {
   }
   .band { padding: 34px 0 30px; }
   .profile { padding: 0 20px; }
+  .profile-text + div { margin-top: 0; }
   .profile img { max-width: 160px; margin: 0 auto; }
   section { padding: 20px 20px 22px; }
   .profile-text { text-align: left; }
