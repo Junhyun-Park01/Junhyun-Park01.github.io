@@ -10,8 +10,11 @@
   --rule-strong: #787c8c;
   --muted: #5a5e6e;
   --body: #1a1d28;
-  --bg: #ffffff;
-  --bg-soft: #fbfaf5;
+  --bg: #eef2f7;            /* page tint */
+  --surface: #ffffff;       /* section cards */
+  --band-a: #2a3350;        /* header band gradient */
+  --band-b: #435176;
+  --band-c: #5c6d95;
   --link: #1a4fa0;
   --link-hover: #c0651a;
   --tag-medai-bg: #e6eef6;
@@ -73,7 +76,7 @@ body {
 .container {
   max-width: var(--maxw);
   margin: 0 auto;
-  padding: 28px 28px 64px;
+  padding: 22px 28px 48px;
 }
 
 /* ---------- top nav ---------- */
@@ -81,7 +84,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255,255,255,0.94);
+  background: rgba(238,242,247,0.93);
   backdrop-filter: saturate(140%) blur(6px);
   border-bottom: 1px solid var(--rule);
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -117,21 +120,32 @@ body {
   grid-template-columns: 1fr 180px;
   gap: 32px;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 8px;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 28px;
 }
+.band {
+  background: linear-gradient(135deg, var(--band-a) 0%, var(--band-b) 55%, var(--band-c) 100%);
+  color: #eef1f7;
+  padding: 52px 0 46px;
+}
+.profile p { color: #e6ebf4; }
+.profile a { color: #bcd4ff; }
+.profile a:hover { color: #ffe0b2; }
+.profile .links .ico { color: #c0cade; }
+.profile .links .ico:hover { color: #fff; }
 .profile-text h1 {
   margin: 0 0 6px;
   font-family: 'Source Serif 4', 'Charter', Georgia, serif;
   font-size: 38px;
   font-weight: 700;
   letter-spacing: 0.01em;
-  color: var(--accent);
+  color: #ffffff;
   font-variant: small-caps;
 }
 .profile-text .affil {
   margin: 0 0 12px;
-  color: var(--muted);
+  color: #c6cfe0;
   font-size: 15px;
   font-style: italic;
 }
@@ -142,8 +156,9 @@ body {
 .profile img {
   width: 100%;
   max-width: 180px;
-  border-radius: 4px;
+  border-radius: 8px;
   display: block;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.30);
   /* subtle retouch: brighter, crisper, warmer */
   filter: brightness(1.13) contrast(1.03) saturate(1.06);
 }
@@ -173,10 +188,17 @@ a { color: var(--link); text-decoration: none; }
 a:hover { color: var(--link-hover); }
 
 /* ---------- section headers (small-caps + rule) ---------- */
-section { margin-top: 36px; }
+section {
+  margin-top: 20px;
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 24px 28px 26px;
+  box-shadow: 0 1px 2px rgba(16,24,40,0.05), 0 6px 18px rgba(16,24,40,0.06);
+}
 section > h2 {
   margin: 0 0 14px;
-  padding-bottom: 4px;
+  padding-bottom: 6px;
+  color: var(--band-b);
   font-family: 'Source Serif 4', Georgia, serif;
   font-size: 16px;
   font-weight: 700;
@@ -320,7 +342,7 @@ ul.news li .date {
 }
 .pub .title {
   font-weight: 700;
-  color: var(--accent);
+  color: #1b2947;
   display: block;
   margin-bottom: 4px;
   font-size: 16px;
@@ -595,7 +617,7 @@ ul.news li .date {
 
 /* ---------- footer note ---------- */
 .foot {
-  margin-top: 56px;
+  margin-top: 26px;
   text-align: center;
   color: var(--muted);
   font-size: 12.5px;
@@ -610,7 +632,10 @@ ul.news li .date {
     gap: 18px;
     text-align: center;
   }
+  .band { padding: 34px 0 30px; }
+  .profile { padding: 0 20px; }
   .profile img { max-width: 160px; margin: 0 auto; }
+  section { padding: 20px 20px 22px; }
   .profile-text { text-align: left; }
   .topnav-inner { padding: 10px 18px; gap: 4px 12px; font-size: 12px; }
   .topnav .brand { width: 100%; margin-right: 0; margin-bottom: 4px; }
