@@ -64,7 +64,7 @@ section[id], header[id] { scroll-margin-top: 72px; }
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Source Serif 4', 'Source Serif Pro', 'Charter', Georgia, 'Times New Roman', serif;
+  font-family: 'Newsreader', 'Charter', Georgia, 'Times New Roman', serif;
   font-size: 16px;
   line-height: 1.55;
   color: var(--body);
@@ -136,7 +136,7 @@ body {
 .profile .links .ico:hover { color: #fff; }
 .profile-text h1 {
   margin: 0 0 6px;
-  font-family: 'Source Serif 4', 'Charter', Georgia, serif;
+  font-family: 'Newsreader', 'Charter', Georgia, serif;
   font-size: 38px;
   font-weight: 700;
   letter-spacing: 0.01em;
@@ -198,7 +198,7 @@ section {
 section > h2 {
   margin: 0 0 14px;
   padding-bottom: 6px;
-  font-family: 'Source Serif 4', Georgia, serif;
+  font-family: 'Newsreader', Georgia, serif;
   font-size: 22px;
   font-weight: 700;
   font-variant: small-caps;
