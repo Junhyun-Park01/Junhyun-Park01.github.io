@@ -75,13 +75,11 @@
       <li><span class="date">Dec 2025</span> Honored to receive the <strong>Talent Award of Korea</strong> from the Minister of Education — a national award given to 100 outstanding young talents annually.</li>
       <li><span class="date">Jun 2025</span> Our paper <em>OFF-CLIP: Improving Normal Detection Confidence in Radiology CLIP with Simple Off-Diagonal Term Auto-Adjustment</em> has been early-accepted to MICCAI (top 9%). Our paper <em>Vibration-Assisted Hysteresis Mitigation for Achieving High Compensation Efficiency</em> has also been accepted to IEEE/RSJ IROS.</li>
       <li><span class="date">Mar 2025</span> Attending IEEE ICRA 2025 to present <em>Hysteresis Compensation of Flexible Continuum Manipulator Using RGBD Sensing and Temporal Convolutional Network.</em> Happy to grab coffee and chat.</li>
-    </ul>
-    <ul class="news news-more" hidden>
       <li><span class="date">Jan 2025</span> Received the <strong>Best Researcher Award</strong> (top 1%) from the Department of Robotics &amp; Mechatronics Engineering, DGIST.</li>
       <li><span class="date">May 2024</span> Our paper <em>Hysteresis Compensation of Flexible Continuum Manipulator using RGBD Sensing and Temporal Convolutional Network</em> has been accepted to IEEE RA-L.</li>
       <li><span class="date">Apr 2024</span> Our paper <em>Integrating ChatGPT into Secure Hospital Networks: A Case Study on Improving Radiology Report Analysis</em> has been accepted to CHIL 2024.</li>
     </ul>
-    <button type="button" class="news-toggle" aria-expanded="false" aria-controls="news-more">Show more</button>
+    <nav class="news-pager" aria-label="News pages" hidden></nav>
   </section>
 
   <!-- ============================ publications ============================ -->
@@ -483,21 +481,50 @@
   })();
 
   (function () {
-    const btn = document.querySelector('.news-toggle');
-    const more = document.querySelector('.news-more');
-    if (!btn || !more) return;
-    btn.addEventListener('click', function () {
-      const expanded = btn.getAttribute('aria-expanded') === 'true';
-      if (expanded) {
-        more.setAttribute('hidden', '');
-        btn.setAttribute('aria-expanded', 'false');
-        btn.textContent = 'Show more';
-      } else {
-        more.removeAttribute('hidden');
-        btn.setAttribute('aria-expanded', 'true');
-        btn.textContent = 'Show less';
-      }
-    });
+    const PER_PAGE = 5;
+    const list = document.querySelector('ul.news');
+    const pager = document.querySelector('.news-pager');
+    if (!list || !pager) return;
+    const items = Array.from(list.children);
+    const pages = Math.ceil(items.length / PER_PAGE);
+    if (pages < 2) return;
+
+    function makeButton(label, ariaLabel) {
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.textContent = label;
+      if (ariaLabel) b.setAttribute('aria-label', ariaLabel);
+      pager.appendChild(b);
+      return b;
+    }
+
+    const prev = makeButton('\u2039', 'Previous page');
+    const numbers = [];
+    for (let i = 0; i < pages; i++) {
+      const b = makeButton(String(i + 1), 'Page ' + (i + 1));
+      b.addEventListener('click', function () { show(i); });
+      numbers.push(b);
+    }
+    const next = makeButton('\u203a', 'Next page');
+
+    let current = 0;
+    function show(page) {
+      current = page;
+      items.forEach(function (li, i) {
+        li.hidden = Math.floor(i / PER_PAGE) !== page;
+      });
+      numbers.forEach(function (b, i) {
+        if (i === page) b.setAttribute('aria-current', 'page');
+        else b.removeAttribute('aria-current');
+      });
+      prev.disabled = page === 0;
+      next.disabled = page === pages - 1;
+    }
+    prev.addEventListener('click', function () { show(current - 1); });
+    next.addEventListener('click', function () { show(current + 1); });
+
+    pager.hidden = false;
+    show(0);
   })();
 
   (function () {
