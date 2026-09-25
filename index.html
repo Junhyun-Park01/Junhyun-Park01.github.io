@@ -70,6 +70,7 @@
   <section id="news">
     <h2>News</h2>
     <ul class="news">
+      <li><span class="date">Sep 2026</span> Our paper <em>GLINT: Sparsely Gated Vision-Language Alignment for Fine-Grained Radiology Representations</em> has been accepted to NeurIPS 2026.</li>
       <li><span class="date">Feb 2026</span> Joined <a href="https://www.deepnoid.com/">DEEPNOID</a> AI Research Lab (Multimodal Team) as a researcher, working on medical foundation models for CXR, CT, and MRI.</li>
       <li><span class="date">Dec 2025</span> Honored to receive the <strong>Talent Award of Korea</strong> from the Minister of Education — a national award given to 100 outstanding young talents annually.</li>
       <li><span class="date">Jun 2025</span> Our paper <em>OFF-CLIP: Improving Normal Detection Confidence in Radiology CLIP with Simple Off-Diagonal Term Auto-Adjustment</em> has been early-accepted to MICCAI (top 9%). Our paper <em>Vibration-Assisted Hysteresis Mitigation for Achieving High Compensation Efficiency</em> has also been accepted to IEEE/RSJ IROS.</li>
@@ -150,6 +151,23 @@
 
     <h3>Conference</h3>
     <div class="pubs">
+
+      <article class="pub" data-type="conference" data-tags="medai">
+        <img class="thumb" src="publication_images/glint_2026.png" alt="GLINT NeurIPS 2026">
+        <div>
+          <div class="tags">
+            <span class="tag tag-medai">Medical AI</span>
+            <span class="tag tag-vlp">VLP</span>
+          </div>
+          <span class="title">GLINT: Sparsely Gated Vision-Language Alignment for Fine-Grained Radiology Representations</span>
+          <div class="authors">Jonggwon Park<sup>*</sup>, Seongeun Lee<sup>*</sup>, <span class="me">Junhyun Park</span>, Hannah Yun, Hyunwoong Kim, Sohyun Jeong, Hyewon Kang, Byungmu Yoon, Kyoyun Choi</div>
+          <div class="venue">Conference on Neural Information Processing Systems (NeurIPS), 2026</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/abs/2606.03180">arXiv</a>
+          </div>
+          <p class="summary">A radiology VLM that aligns text to only the query-relevant image patches via a sparse sigmoid gate, with feature regularization to a frozen SSL teacher. Enables zero-shot classification, grounding, and segmentation on both chest X-ray and 3D CT from free-text queries.</p>
+        </div>
+      </article>
 
       <article class="pub" data-type="conference" data-tags="medai">
         <img class="thumb" src="publication_images/offclip_2025.png" alt="OFF-CLIP MICCAI 2025">
@@ -248,23 +266,6 @@
             <a href="https://arxiv.org/abs/2606.09871">arXiv</a>
           </div>
           <p class="summary">SD-GRPO decomposes long-form generation into verifiable segments and z-normalizes per-segment rewards across the rollout group, yielding a vector of per-segment advantages rather than a single sequence-level signal. It plugs into existing GRPO frameworks such as Dr. GRPO with minimal overhead and delivers consistent gains across dense image captioning, long-form VQA, and real-world scientific figure captioning.</p>
-        </div>
-      </article>
-
-      <article class="pub" data-type="preprint" data-tags="medai">
-        <img class="thumb" src="publication_images/glint_2026.png" alt="GLINT 2026">
-        <div>
-          <div class="tags">
-            <span class="tag tag-medai">Medical AI</span>
-            <span class="tag tag-vlp">VLP</span>
-          </div>
-          <span class="title">GLINT: Sparsely Gated Vision-Language Alignment for Fine-Grained Radiology Representations</span>
-          <div class="authors">Jonggwon Park<sup>*</sup>, Seongeun Lee<sup>*</sup>, <span class="me">Junhyun Park</span>, Hannah Yun, Hyunwoong Kim, Sohyun Jeong, Hyewon Kang, Byungmu Yoon, Kyoyun Choi</div>
-          <div class="venue">arXiv preprint, arXiv:2606.03180, 2026</div>
-          <div class="pub-links">
-            <a href="https://arxiv.org/abs/2606.03180">arXiv</a>
-          </div>
-          <p class="summary">A radiology VLM that aligns text to only the query-relevant image patches via a sparse sigmoid gate, with feature regularization to a frozen SSL teacher. Enables zero-shot classification, grounding, and segmentation on both chest X-ray and 3D CT from free-text queries.</p>
         </div>
       </article>
 
