@@ -461,22 +461,14 @@ ul.news li .date {
 }
 
 /* ---------- visitors ---------- */
-.visitor-widget {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 220px;
-  padding: 16px 0;
-}
-.visitor-widget > * { max-width: 100%; }
-.visitor-placeholder {
-  font-family: 'Inter', sans-serif;
-  font-size: 13px;
-  color: var(--muted);
-  font-style: italic;
+.visitor-map {
+  max-width: 800px;
+  margin: 0 auto;
+  overflow-x: auto;
   text-align: center;
-  margin: 0;
 }
+.visitor-map img,
+.visitor-map canvas { max-width: 100%; height: auto; }
 
 /* ---------- photo gallery ---------- */
 .photo-grid {

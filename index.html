@@ -466,6 +466,12 @@
     </ul>
   </section>
 
+  <!-- ============================ visitors ============================ -->
+  <section id="visitors" hidden>
+    <h2>Visitors Around the World</h2>
+    <div class="visitor-map" id="visitor-map"></div>
+  </section>
+
   <p class="foot">© Junhyun Park &middot; Last updated September 2026</p>
 
 </div>
@@ -477,6 +483,25 @@
     });
     document.addEventListener('dragstart', function (e) {
       if (e.target && e.target.tagName === 'IMG') e.preventDefault();
+    });
+  })();
+
+  // Load the third-party visitor map after the page has fully rendered, so a slow or
+  // unreachable map service never blocks rendering. Colors follow the site palette:
+  // cl = land, co = ocean, cmo = past visits, cmn = recent visits, ct = text.
+  (function () {
+    const MAP_KEY = 'rtcW30H8cOm7EMYsgHpyHafIV6kPma_w8ZPEKe-XCek';  // `d=` value from the MapMyVisitors embed code
+    const section = document.getElementById('visitors');
+    const map = document.getElementById('visitor-map');
+    if (!MAP_KEY || !section || !map) return;
+    section.hidden = false;
+    window.addEventListener('load', function () {
+      const s = document.createElement('script');
+      s.id = 'mapmyvisitors';
+      s.async = true;
+      s.src = 'https://mapmyvisitors.com/map.js?cl=d5d8de&w=800&t=tt&d=' + MAP_KEY +
+        '&co=ffffff&cmo=787c8c&cmn=c0651a&ct=222634';
+      map.appendChild(s);
     });
   })();
 
