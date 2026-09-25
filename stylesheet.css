@@ -339,22 +339,49 @@ ul.news li .date {
 }
 
 /* ---------- publications ---------- */
-.pubs { display: flex; flex-direction: column; gap: 18px; }
+.pubs { display: flex; flex-direction: column; gap: 14px; }
 .pub {
   display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 18px;
-  align-items: start;
-  padding: 4px 0;
+  grid-template-columns: 220px 1fr;
+  gap: 20px;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid #e3e5ea;
+  border-radius: 10px;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.pub:hover {
+  border-color: var(--rule);
+  box-shadow: 0 4px 14px rgba(16,24,40,0.06);
 }
 .pub.text-only { grid-template-columns: 1fr; }
+.thumb-wrap {
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 34px 10px 10px;      /* top gutter keeps the badge off the figure */
+  background: #f5f6f8;
+}
 .pub .thumb {
   width: 100%;
   aspect-ratio: 4 / 3;          /* uniform thumbnail box across all rows */
   object-fit: contain;          /* letterbox figures instead of cropping */
-  border-radius: 3px;
   display: block;
 }
+.pub-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: var(--accent);
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+.pub-badge.preprint { background: var(--muted); }
 .pub .title {
   font-weight: 700;
   color: #1b2947;
@@ -380,15 +407,25 @@ ul.news li .date {
   margin-bottom: 6px;
 }
 .pub .pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
   font-family: 'Inter', sans-serif;
-  font-size: 13px;
-  margin: 4px 0 6px;
 }
-.pub .pub-links a { font-weight: 500; }
-.pub .summary {
-  font-size: 14.5px;
-  color: var(--body);
-  margin: 6px 0 0;
+.pub .pub-links a {
+  padding: 3px 10px;
+  border: 1px solid var(--rule);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s, border-color 0.15s;
+}
+.pub .pub-links a:hover {
+  color: var(--accent);
+  border-color: var(--rule-strong);
 }
 .pub .me { font-weight: 700; color: var(--accent); }
 
