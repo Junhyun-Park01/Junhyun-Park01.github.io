@@ -468,6 +468,15 @@ ul.news li .date {
   text-align: center;
   border-radius: 6px;
 }
+.visitors-since {
+  margin-left: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  font-variant: normal;
+  letter-spacing: 0;
+  color: var(--muted);
+}
 /* Display only: the widget wraps the map in a link to its stats page. */
 .visitor-map a {
   pointer-events: none;
