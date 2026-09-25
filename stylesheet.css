@@ -466,6 +466,12 @@ ul.news li .date {
   margin: 0 auto;
   overflow-x: auto;
   text-align: center;
+  border-radius: 6px;
+}
+/* Display only: the widget wraps the map in a link to its stats page. */
+.visitor-map a {
+  pointer-events: none;
+  cursor: default;
 }
 .visitor-map img,
 .visitor-map canvas { max-width: 100%; height: auto; }
