@@ -498,14 +498,22 @@
       return b;
     }
 
-    const prev = makeButton('\u2039', 'Previous page');
+    function makeArrow(points, ariaLabel) {
+      const b = makeButton('', ariaLabel);
+      b.className = 'pager-arrow';
+      b.innerHTML = '<svg viewBox="0 0 12 12" aria-hidden="true"><polyline points="' + points +
+        '" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+      return b;
+    }
+
+    const prev = makeArrow('7.5,2.5 4,6 7.5,9.5', 'Previous page');
     const numbers = [];
     for (let i = 0; i < pages; i++) {
       const b = makeButton(String(i + 1), 'Page ' + (i + 1));
       b.addEventListener('click', function () { show(i); });
       numbers.push(b);
     }
-    const next = makeButton('\u203a', 'Next page');
+    const next = makeArrow('4.5,2.5 8,6 4.5,9.5', 'Next page');
 
     let current = 0;
     function show(page) {
