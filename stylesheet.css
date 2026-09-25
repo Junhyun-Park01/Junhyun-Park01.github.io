@@ -462,7 +462,7 @@ ul.news li .date {
 
 /* ---------- visitors ---------- */
 .visitor-map {
-  max-width: 800px;
+  max-width: 560px;
   margin: 0 auto;
   overflow-x: auto;
   text-align: center;
