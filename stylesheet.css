@@ -216,11 +216,11 @@ section > h3 {
   gap: 14px;
   margin: 26px 0 12px;
   font-family: 'Inter', sans-serif;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  color: var(--rule-strong);
+  color: var(--accent);
   white-space: nowrap;
 }
 section > h3::after {
@@ -381,6 +381,7 @@ ul.news li .date {
   letter-spacing: 0.03em;
   color: #fff;
 }
+.pub-badge.preprint { background: var(--muted); }
 .pub .title {
   font-weight: 700;
   color: #1b2947;
