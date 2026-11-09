@@ -8,7 +8,7 @@
   <meta name="description" content="Junhyun Park — Researcher at DEEPNOID. Medical AI, vision-language models, surgical robotics.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
@@ -19,19 +19,19 @@
     <span class="brand">Junhyun Park</span>
     <a href="#publications">Publications</a>
     <a href="#challenges">Challenges</a>
+    <a href="#awards">Awards</a>
     <a href="#experience">Experience</a>
     <a href="#education">Education</a>
-    <a href="#awards">Awards</a>
     <a href="photos.html">Photos</a>
     <a href="data/Curriculum_Vitae_Junhyun_Park.pdf?v=20261028-9">CV</a>
   </div>
 </nav>
 
 <!-- ============================ header band ============================ -->
-<header class="band" id="about">
+<header class="hero" id="about">
   <div class="profile">
     <div class="profile-text">
-      <h1>Junhyun Park</h1>
+      <h1>Junhyun <span class="ln">Park</span></h1>
       <p class="affil">Researcher, DEEPNOID &middot; M.S., DGIST (2026)</p>
       <p>
         I am an AI researcher at <a href="https://www.deepnoid.com/">DEEPNOID</a> (alternative military service),
@@ -57,7 +57,7 @@
         <a href="https://www.linkedin.com/in/junhyun-park-199a4a21b/" class="ico" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
       </p>
     </div>
-    <div>
+    <div class="profile-photo">
       <img src="publication_images/Junhyun_Park_2026.jpg" alt="Junhyun Park profile photo">
     </div>
   </div>
@@ -90,32 +90,13 @@
     <p style="font-size: 14px; color: var(--muted); font-style: italic; margin: -6px 0 10px;">
       <sup>*</sup> denotes equal contribution.
     </p>
-    <div class="pub-filters">
-      <div class="pub-filter pub-filter-type" role="group" aria-label="Filter publications by type">
-        <span class="filter-label">Type</span>
-        <button type="button" data-filter="all" aria-pressed="true">All</button>
-        <button type="button" data-filter="journal" aria-pressed="false">Journal</button>
-        <button type="button" data-filter="conference" aria-pressed="false">Conference</button>
-        <button type="button" data-filter="preprint" aria-pressed="false">Preprint</button>
-      </div>
-      <div class="pub-filter pub-filter-domain" role="group" aria-label="Filter publications by domain">
-        <span class="filter-label">Domain</span>
-        <button type="button" data-filter="all" aria-pressed="true">All</button>
-        <button type="button" data-filter="medai" aria-pressed="false">Medical AI</button>
-        <button type="button" data-filter="surg" aria-pressed="false">Surgical Robotics</button>
-      </div>
-    </div>
 
     <h3>Journal</h3>
     <div class="pubs">
 
-      <article class="pub" data-type="journal" data-tags="surg">
+      <article class="pub">
         <div class="thumb-wrap"><span class="pub-badge">RA-L'24</span><img class="thumb" src="publication_images/tcn_2024.jpg" alt="RA-L 2024"></div>
         <div>
-          <div class="tags">
-            <span class="tag tag-surg">Surgical Robotics</span>
-            <span class="tag tag-hyst">Hysteresis Compensation</span>
-          </div>
           <span class="title">Hysteresis Compensation of Flexible Continuum Manipulator using RGBD Sensing and Temporal Convolutional Network</span>
           <div class="authors"><span class="me">Junhyun Park</span><sup>*</sup>, Seonghyeok Jang<sup>*</sup>, Hyojae Park, Seongjun Bae, Minho Hwang</div>
           <div class="venue">IEEE Robotics and Automation Letters (RA-L), vol. 9, no. 7, 2024</div>
@@ -125,15 +106,12 @@
             <a href="https://arxiv.org/pdf/2402.11319">arXiv</a>
           </div>
         </div>
+      <div class="pub-year">2024</div>
       </article>
 
-      <article class="pub" data-type="journal" data-tags="surg">
+      <article class="pub">
         <div class="thumb-wrap"><span class="pub-badge">IJMRCAS'24</span><img class="thumb" src="publication_images/sam_2024.jpg" alt="IJMRCAS 2024"></div>
         <div>
-          <div class="tags">
-            <span class="tag tag-surg">Surgical Robotics</span>
-            <span class="tag tag-hyst">Hysteresis Compensation</span>
-          </div>
           <span class="title">SAM: Semi-Active Mechanism for Extensible Continuum Manipulator and Real-time Hysteresis Compensation Control Algorithm</span>
           <div class="authors"><span class="me">Junhyun Park</span><sup>*</sup>, Seonghyeok Jang<sup>*</sup>, Myeongbo Park, Hyojae Park, Jeonghyeon Yoon, Minho Hwang</div>
           <div class="venue">International Journal of Medical Robotics and Computer Assisted Surgery (IJMRCAS), 2024</div>
@@ -143,6 +121,7 @@
             <a href="https://arxiv.org/pdf/2406.18388">arXiv</a>
           </div>
         </div>
+      <div class="pub-year">2024</div>
       </article>
 
     </div>
@@ -150,13 +129,9 @@
     <h3>Conference</h3>
     <div class="pubs">
 
-      <article class="pub" data-type="conference" data-tags="medai">
+      <article class="pub">
         <div class="thumb-wrap"><span class="pub-badge">NeurIPS'26</span><img class="thumb" src="publication_images/glint_2026.png" alt="GLINT NeurIPS 2026"></div>
         <div>
-          <div class="tags">
-            <span class="tag tag-medai">Medical AI</span>
-            <span class="tag tag-vlp">VLP</span>
-          </div>
           <span class="title">GLINT: Sparsely Gated Vision-Language Alignment for Fine-Grained Radiology Representations</span>
           <div class="authors">Jonggwon Park<sup>*</sup>, Seongeun Lee<sup>*</sup>, <span class="me">Junhyun Park</span>, Hannah Yun, Hyunwoong Kim, Sohyun Jeong, Hyewon Kang, Byungmu Yoon, Kyoyun Choi</div>
           <div class="venue">Conference on Neural Information Processing Systems (NeurIPS), 2026</div>
@@ -165,15 +140,12 @@
             <a href="https://arxiv.org/pdf/2606.03180">arXiv</a>
           </div>
         </div>
+      <div class="pub-year">2026</div>
       </article>
 
-      <article class="pub" data-type="conference" data-tags="medai">
+      <article class="pub">
         <div class="thumb-wrap"><span class="pub-badge">MICCAI'25</span><img class="thumb" src="publication_images/offclip_2025.png" alt="OFF-CLIP MICCAI 2025"></div>
         <div>
-          <div class="tags">
-            <span class="tag tag-medai">Medical AI</span>
-            <span class="tag tag-vlp">VLP</span>
-          </div>
           <span class="title">OFF-CLIP: Improving Normal Detection Confidence in Radiology CLIP with Simple Off-Diagonal Term Auto-Adjustment</span>
           <div class="authors"><span class="me">Junhyun Park</span><sup>*</sup>, Chanyu Moon<sup>*</sup>, Donghwan Lee, Kyungsu Kim, Minho Hwang</div>
           <div class="venue">International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI), 2025</div>
@@ -184,16 +156,12 @@
             <a href="https://arxiv.org/pdf/2503.01794">arXiv</a>
           </div>
         </div>
+      <div class="pub-year">2025</div>
       </article>
 
-      <article class="pub" data-type="conference" data-tags="surg">
+      <article class="pub">
         <div class="thumb-wrap"><span class="pub-badge">IROS'25</span><img class="thumb" src="publication_images/vibration_2025.png" alt="IROS 2025"></div>
         <div>
-          <div class="tags">
-            <span class="tag tag-surg">Surgical Robotics</span>
-            <span class="tag tag-hyst">Hysteresis Compensation</span>
-            <span class="tag tag-tsm">Tendon-Sheath Mechanism</span>
-          </div>
           <span class="title">Vibration-Assisted Hysteresis Mitigation for Achieving High Compensation Efficiency</span>
           <div class="authors">Myeongbo Park<sup>*</sup>, Chunggil An<sup>*</sup>, <span class="me">Junhyun Park</span><sup>*</sup>, Jonghyun Kang, Minho Hwang</div>
           <div class="venue">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2025</div>
@@ -202,14 +170,12 @@
             <a href="https://arxiv.org/pdf/2503.02720">arXiv</a>
           </div>
         </div>
+      <div class="pub-year">2025</div>
       </article>
 
-      <article class="pub" data-type="conference" data-tags="surg">
+      <article class="pub">
         <div class="thumb-wrap"><span class="pub-badge">IROS'24</span><img class="thumb" src="publication_images/optimizing_2024.png" alt="IROS 2024"></div>
         <div>
-          <div class="tags">
-            <span class="tag tag-surg">Surgical Robotics</span>
-          </div>
           <span class="title">Optimizing Base Placement of Surgical Robot: Kinematics Data-Driven Approach by Analyzing Working Pattern</span>
           <div class="authors">Jeonghyeon Yoon<sup>*</sup>, <span class="me">Junhyun Park</span><sup>*</sup>, Hyojae Park, Hakyoon Lee, Sangwon Lee, Minho Hwang</div>
           <div class="venue">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2024</div>
@@ -219,15 +185,12 @@
             <a href="https://arxiv.org/pdf/2402.16101">arXiv</a>
           </div>
         </div>
+      <div class="pub-year">2024</div>
       </article>
 
-      <article class="pub" data-type="conference" data-tags="medai">
+      <article class="pub">
         <div class="thumb-wrap"><span class="pub-badge">CHIL'24</span><img class="thumb" src="publication_images/skd_2024.png" alt="CHIL 2024"></div>
         <div>
-          <div class="tags">
-            <span class="tag tag-medai">Medical AI</span>
-            <span class="tag tag-llm">LLM</span>
-          </div>
           <span class="title">Integrating ChatGPT into Secure Hospital Networks: A Case Study on Improving Radiology Report Analysis</span>
           <div class="authors">Kyungsu Kim<sup>*</sup>, <span class="me">Junhyun Park</span><sup>*</sup>, Saul Langarica, Adham Mahmoud Alkhadrawi, Synho Do</div>
           <div class="venue">Conference on Health, Inference, and Learning (CHIL), 2024</div>
@@ -239,6 +202,7 @@
             <a href="https://github.com/emr-distillation/emr_distillation">Code</a>
           </div>
         </div>
+      <div class="pub-year">2024</div>
       </article>
 
     </div>
@@ -246,13 +210,9 @@
     <h3>Preprints</h3>
     <div class="pubs">
 
-      <article class="pub" data-type="preprint" data-tags="">
+      <article class="pub">
         <div class="thumb-wrap"><span class="pub-badge preprint">arXiv'26</span><img class="thumb" src="publication_images/sdgrpo_2026.png" alt="SD-GRPO 2026"></div>
         <div>
-          <div class="tags">
-            <span class="tag tag-rl">RL</span>
-            <span class="tag tag-vlm">VLM</span>
-          </div>
           <span class="title">SD-GRPO: Verifiable Segment Decomposition for Long-Form Vision-Language Generation</span>
           <div class="authors">Hyunwoong Kim, Seongeun Lee, Hannah Yun, <span class="me">Junhyun Park</span>, Jonggwon Park</div>
           <div class="venue">arXiv preprint, arXiv:2606.09871, 2026</div>
@@ -260,16 +220,12 @@
             <a href="https://arxiv.org/abs/2606.09871">arXiv</a>
           </div>
         </div>
+      <div class="pub-year">2026</div>
       </article>
 
-      <article class="pub" data-type="preprint" data-tags="surg">
+      <article class="pub">
         <div class="thumb-wrap"><span class="pub-badge preprint">arXiv'26</span><img class="thumb" src="publication_images/sstl_2026.png" alt="SSTL 2026"></div>
         <div>
-          <div class="tags">
-            <span class="tag tag-surg">Surgical Robotics</span>
-            <span class="tag tag-hyst">Hysteresis Compensation</span>
-            <span class="tag tag-tsm">Tendon-Sheath Mechanism</span>
-          </div>
           <span class="title">SSTL: Self-Sensing Tendon Loop for Hysteresis Modeling and Compensation in Tendon-Sheath Mechanisms</span>
           <div class="authors">Myeongbo Park<sup>*</sup>, <span class="me">Junhyun Park</span><sup>*</sup>, Ihsan Ullah, Chunggil An, Minho Hwang</div>
           <div class="venue">arXiv preprint, arXiv:2605.16870, 2026</div>
@@ -277,15 +233,12 @@
             <a href="https://arxiv.org/pdf/2605.16870">arXiv</a>
           </div>
         </div>
+      <div class="pub-year">2026</div>
       </article>
 
-      <article class="pub" data-type="preprint" data-tags="surg">
+      <article class="pub">
         <div class="thumb-wrap"><span class="pub-badge preprint">arXiv'26</span><img class="thumb" src="publication_images/markerless_2026.png" alt="Markerless 6D Pose 2026"></div>
         <div>
-          <div class="tags">
-            <span class="tag tag-surg">Surgical Robotics</span>
-            <span class="tag tag-pose">Pose Estimation</span>
-          </div>
           <span class="title">MarUco: A Markerless 6D Pose Estimation Framework for Closed-Loop Control of Surgical Continuum Manipulators</span>
           <div class="authors"><span class="me">Junhyun Park</span><sup>*</sup>, Chunggil An<sup>*</sup>, Myeongbo Park, Ihsan Ullah, Sihyeong Park, Minho Hwang</div>
           <div class="venue">arXiv preprint, arXiv:2602.16365, 2026</div>
@@ -293,6 +246,7 @@
             <a href="https://arxiv.org/pdf/2602.16365">arXiv</a>
           </div>
         </div>
+      <div class="pub-year">2026</div>
       </article>
 
     </div>
@@ -301,191 +255,233 @@
   <!-- ============================ challenges ============================ -->
   <section id="challenges">
     <h2>Challenges</h2>
+    <div class="pubs">
 
-    <div class="entry">
-      <div class="left">
-        <strong>VLM3D 2026</strong>, MICCAI &mdash; MRI Abnormality Classification <span class="rank place">1st place</span>
-      </div>
-      <div class="date">Sep 2026</div>
+      <article class="pub text-only">
+        <div>
+          <span class="title">VLM3D 2026 &mdash; MRI Abnormality Classification</span>
+          <div class="venue">MICCAI 2026 Challenge, Sep 2026</div>
+          <div class="highlight">1st place</div>
+        </div>
+        <div class="pub-year">2026</div>
+      </article>
+
+      <article class="pub text-only">
+        <div>
+          <span class="title">VLM3D 2026 &mdash; CT Abnormality Classification</span>
+          <div class="venue">MICCAI 2026 Challenge, Sep 2026</div>
+          <div class="highlight">2nd place</div>
+        </div>
+        <div class="pub-year">2026</div>
+      </article>
+
+      <article class="pub text-only">
+        <div>
+          <span class="title">TREAT-MMTB 2026 &mdash; Task 2: TB Diagnosis</span>
+          <div class="venue">MICCAI 2026 Challenge, Aug 2026</div>
+          <div class="highlight">2nd place</div>
+          <div class="pub-links">
+            <a href="https://openreview.net/forum?id=CZZCTepmMj">Paper</a>
+          </div>
+        </div>
+        <div class="pub-year">2026</div>
+      </article>
+
+      <article class="pub text-only">
+        <div>
+          <span class="title">TREAT-MMTB 2026 &mdash; Task 1: Cavity Detection and Segmentation</span>
+          <div class="venue">MICCAI 2026 Challenge, Aug 2026</div>
+          <div class="highlight">3rd place</div>
+          <div class="pub-links">
+            <a href="https://openreview.net/forum?id=VMeKa1iJwV">Paper</a>
+          </div>
+        </div>
+        <div class="pub-year">2026</div>
+      </article>
+
     </div>
 
-    <div class="entry">
-      <div class="left">
-        <strong>VLM3D 2026</strong>, MICCAI &mdash; CT Abnormality Classification <span class="rank place">2nd place</span>
-      </div>
-      <div class="date">Sep 2026</div>
-    </div>
-
-    <div class="entry">
-      <div class="left">
-        <strong>TREAT-MMTB 2026</strong>, MICCAI &mdash; Task 2: TB Diagnosis <span class="rank place">2nd place</span>
-        <br><span class="meta"><a href="https://openreview.net/forum?id=CZZCTepmMj">Paper</a></span>
-      </div>
-      <div class="date">Aug 2026</div>
-    </div>
-
-    <div class="entry">
-      <div class="left">
-        <strong>TREAT-MMTB 2026</strong>, MICCAI &mdash; Task 1: Cavity Detection and Segmentation <span class="rank place">3rd place</span>
-        <br><span class="meta"><a href="https://openreview.net/forum?id=VMeKa1iJwV">Paper</a></span>
-      </div>
-      <div class="date">Aug 2026</div>
-    </div>
-
-  </section>
-
-  <!-- ============================ experience ============================ -->
-  <section id="experience">
-    <h2>Experience</h2>
-
-    <div class="entry">
-      <div class="left">
-        <strong>DEEPNOID</strong>, AI Research Lab — Multimodal Team<br>
-        <span class="role">Researcher (Alternative Military Service)</span><br>
-        <span class="meta">Medical foundation models for CXR, CT, and MRI: VLM, SSL, and report generation.</span>
-      </div>
-      <div class="date">Feb 2026 — Present</div>
-    </div>
-
-    <div class="entry">
-      <div class="left">
-        <strong>DGIST</strong>, Surgical Robotics and Robot Manipulation Lab<br>
-        <span class="role">Graduate / Undergraduate Researcher</span><br>
-        <span class="meta">Advisor: Prof. Minho Hwang.</span>
-      </div>
-      <div class="date">Dec 2021 — Feb 2026</div>
-    </div>
-
-    <div class="entry">
-      <div class="left">
-        <strong>Harvard Medical School</strong>, Lab of Medical Imaging and Computation<br>
-        <span class="role">Research Intern</span><br>
-        <span class="meta">Advisors: Prof. Synho Do, Prof. Kyungsu Kim.</span>
-      </div>
-      <div class="date">Jul 2023 — Aug 2023</div>
-    </div>
-
-  </section>
-
-  <!-- ============================ education ============================ -->
-  <section id="education">
-    <h2>Education</h2>
-
-    <div class="entry">
-      <div class="left">
-        <strong>DGIST</strong><br>
-        <span class="role">M.S., Robotics &amp; Mechatronics Engineering</span><br>
-        <span class="meta">Advisor: Prof. Minho Hwang &middot; GPA: 4.25 / 4.3</span>
-      </div>
-      <div class="date">Feb 2024 — Feb 2026</div>
-    </div>
-
-    <div class="entry">
-      <div class="left">
-        <strong>DGIST</strong><br>
-        <span class="role">B.E., Computer Science and Electrical Engineering (Double Major)</span><br>
-        <span class="meta">GPA: 4.07 / 4.3 &middot; <em>Summa Cum Laude</em>, Valedictorian</span>
-      </div>
-      <div class="date">Feb 2020 — Feb 2024</div>
-    </div>
   </section>
 
   <!-- ============================ awards ============================ -->
   <section id="awards">
     <h2>Honors &amp; Awards</h2>
+    <div class="pubs">
 
-    <div class="entry">
-      <div class="left">
-        <strong>Best Oral Presentation Award</strong> <span class="rank">[1st place]</span>, KoSAIM 2026
-        <br><span class="meta">Korean Society of Artificial Intelligence in Medicine.</span>
-        <br><span class="meta">“Sparse-Gated Alignment in Vision–Language Pretraining Improves Zero-Shot Classification and Localization of Chest Findings on Radiographs and CT”</span>
-      </div>
-      <div class="date">Oct 2026</div>
+      <article class="pub text-only">
+        <div>
+          <span class="title">Best Oral Presentation Award (1st place)</span>
+          <div class="line">KoSAIM 2026, Korean Society of Artificial Intelligence in Medicine &middot; Oct 2026</div>
+          <div class="venue">&ldquo;Sparse-Gated Alignment in Vision&ndash;Language Pretraining Improves Zero-Shot Classification and Localization of Chest Findings on Radiographs and CT&rdquo;</div>
+        </div>
+        <div class="pub-year">2026</div>
+      </article>
+
+      <article class="pub text-only">
+        <div>
+          <span class="title">Talent Award of Korea</span>
+          <div class="line">Minister of Education &middot; Dec 2025</div>
+          <div class="venue">National award to 100 outstanding young talents annually.</div>
+        </div>
+        <div class="pub-year">2025</div>
+      </article>
+
+      <article class="pub text-only">
+        <div>
+          <span class="title">Best Researcher Award</span>
+          <div class="line">Dept. of Robotics &amp; Mechatronics Engineering, DGIST &middot; Jan 2025</div>
+          <div class="venue">One of two graduate students selected annually in the department.</div>
+        </div>
+        <div class="pub-year">2025</div>
+      </article>
+
+      <article class="pub text-only">
+        <div>
+          <span class="title">Excellence Poster Award</span>
+          <div class="line">Dept. of Robotics &amp; Mechatronics Engineering, DGIST &middot; Jan 2025</div>
+        </div>
+        <div class="pub-year">2025</div>
+      </article>
+
+      <article class="pub text-only">
+        <div>
+          <span class="title">IPESK Next Generation Engineering Researcher</span>
+          <div class="line">Jan 2025</div>
+        </div>
+        <div class="pub-year">2025</div>
+      </article>
+
+      <article class="pub text-only">
+        <div>
+          <span class="title">Outstanding Paper Award</span>
+          <div class="line">The 18th Korea Robotics Society Annual Conference &middot; Feb 2023</div>
+        </div>
+        <div class="pub-year">2023</div>
+      </article>
+
+      <article class="pub text-only">
+        <div>
+          <span class="title">Korea Presidential Science Scholarship</span>
+          <div class="line">President of Korea &middot; Jun 2022 &ndash; Feb 2024</div>
+        </div>
+        <div class="pub-year range">2022 &ndash; 2024</div>
+      </article>
+
+      <article class="pub text-only">
+        <div>
+          <span class="title">DGIST Presidential Fellowship</span>
+          <div class="line">President of DGIST &middot; Apr 2021 &ndash; Feb 2024</div>
+          <div class="venue">Awarded to only 2 students per cohort at DGIST.</div>
+        </div>
+        <div class="pub-year range">2021 &ndash; 2024</div>
+      </article>
+
+      <article class="pub text-only">
+        <div>
+          <span class="title">Korean College Mathematics Competition (silver medal)</span>
+          <div class="line">Korean Mathematical Society &middot; Dec 2020</div>
+        </div>
+        <div class="pub-year">2020</div>
+      </article>
+
+      <article class="pub text-only">
+        <div>
+          <span class="title">Dean&rsquo;s List</span>
+          <div class="line">DGIST &middot; Spring/Fall 2020, Spring 2021, Fall 2022, Spring/Fall 2023</div>
+        </div>
+        <div class="pub-year range">2020 &ndash; 2023</div>
+      </article>
+
     </div>
+  </section>
 
-    <div class="entry">
-      <div class="left">
-        <strong>Talent Award of Korea</strong>, Minister of Education
-        <br><span class="meta">National award to 100 outstanding young talents annually.</span>
-      </div>
-      <div class="date">Dec 2025</div>
+  <!-- ============================ experience ============================ -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="pubs">
+
+      <article class="pub text-only">
+        <div>
+          <span class="title">DEEPNOID &mdash; AI Research Lab, Multimodal Team</span>
+          <div class="line">Researcher (Alternative Military Service) &middot; Feb 2026 &ndash; Present</div>
+          <div class="venue">Medical foundation models for CXR, CT, and MRI: VLM, SSL, and report generation.</div>
+        </div>
+        <div class="pub-year range">2026 &ndash; Present</div>
+      </article>
+
+      <article class="pub text-only">
+        <div>
+          <span class="title">DGIST &mdash; Surgical Robotics and Robot Manipulation Lab</span>
+          <div class="line">Graduate / Undergraduate Researcher &middot; Dec 2021 &ndash; Feb 2026</div>
+          <div class="venue">Advisor: Prof. Minho Hwang</div>
+        </div>
+        <div class="pub-year range">2021 &ndash; 2026</div>
+      </article>
+
+      <article class="pub text-only">
+        <div>
+          <span class="title">Harvard Medical School &mdash; Lab of Medical Imaging and Computation</span>
+          <div class="line">Research Intern &middot; Jul 2023 &ndash; Aug 2023</div>
+          <div class="venue">Advisors: Prof. Synho Do, Prof. Kyungsu Kim</div>
+        </div>
+        <div class="pub-year">2023</div>
+      </article>
+
     </div>
+  </section>
 
-    <div class="entry">
-      <div class="left">
-        <strong>Best Researcher Award</strong> <span class="rank">[top 1%]</span>, Dept. of RME, DGIST
-        <br><span class="meta">One of two graduate students selected annually in the Department of Robotics &amp; Mechatronics Engineering at DGIST.</span>
-      </div>
-      <div class="date">Jan 2025</div>
-    </div>
+  <!-- ============================ education ============================ -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="pubs">
 
-    <div class="entry">
-      <div class="left">
-        <strong>Excellence Poster Award</strong>, Dept. of RME, DGIST
-      </div>
-      <div class="date">Jan 2025</div>
-    </div>
+      <article class="pub text-only">
+        <div>
+          <span class="title">DGIST</span>
+          <div class="line">M.S., Robotics &amp; Mechatronics Engineering &middot; Feb 2024 &ndash; Feb 2026</div>
+          <div class="venue">Advisor: Prof. Minho Hwang &middot; GPA 4.25 / 4.3</div>
+        </div>
+        <div class="pub-year range">2024 &ndash; 2026</div>
+      </article>
 
-    <div class="entry">
-      <div class="left">
-        <strong>IPESK Next Generation Engineering Researcher</strong>
-      </div>
-      <div class="date">Jan 2025</div>
-    </div>
+      <article class="pub text-only">
+        <div>
+          <span class="title">DGIST</span>
+          <div class="line">B.E., Computer Science and Electrical Engineering (Double Major) &middot; Feb 2020 &ndash; Feb 2024</div>
+          <div class="venue">GPA 4.07 / 4.3 &middot; <em>Summa Cum Laude</em>, Valedictorian</div>
+        </div>
+        <div class="pub-year range">2020 &ndash; 2024</div>
+      </article>
 
-    <div class="entry">
-      <div class="left">
-        <strong>Outstanding Paper Award</strong> <span class="rank">[top 2.2%]</span>
-        <br><span class="meta">The 18th Korea Robotics Society Annual Conference.</span>
-      </div>
-      <div class="date">Feb 2023</div>
-    </div>
-
-    <div class="entry">
-      <div class="left">
-        <strong>Korea Presidential Science Scholarship</strong>, President of Korea
-      </div>
-      <div class="date">Jun 2022 — Feb 2024</div>
-    </div>
-
-    <div class="entry">
-      <div class="left">
-        <strong>DGIST Presidential Fellowship</strong> <span class="rank">[top 1%]</span>, President of DGIST
-        <br><span class="meta">Awarded to only 2 students per cohort at DGIST.</span>
-      </div>
-      <div class="date">Apr 2021 — Feb 2024</div>
-    </div>
-
-    <div class="entry">
-      <div class="left">
-        <strong>Korean College Mathematics Competition</strong> <span class="rank">[silver medal]</span>, Korean Mathematical Society
-      </div>
-      <div class="date">Dec 2020</div>
-    </div>
-
-    <div class="entry">
-      <div class="left">
-        <strong>Dean's List</strong>, DGIST
-        <br><span class="meta">Spring/Fall 2020, Spring 2021, Fall 2022, Spring/Fall 2023.</span>
-      </div>
-      <div class="date">2020 — 2023</div>
     </div>
   </section>
 
   <!-- ============================ services ============================ -->
   <section id="services">
     <h2>Professional Services</h2>
-    <ul class="clean">
-      <li><strong>Reviewer:</strong> MICCAI (2025); IEEE RA-L, IEEE/RSJ IROS (2024).</li>
-      <li><strong>Teaching Assistant:</strong> Undergraduate Research Group Project (2025); Artificial Intelligence Basics (2024).</li>
-    </ul>
+    <div class="pubs">
+
+      <article class="pub text-only">
+        <div>
+          <span class="title">Reviewer</span>
+          <div class="line">MICCAI (2025); IEEE RA-L, IEEE/RSJ IROS (2024)</div>
+        </div>
+      </article>
+
+      <article class="pub text-only">
+        <div>
+          <span class="title">Teaching Assistant</span>
+          <div class="line">Undergraduate Research Group Project (2025); Artificial Intelligence Basics (2024)</div>
+        </div>
+      </article>
+
+    </div>
   </section>
 
-  <!-- ============================ visitors ============================ -->
-  <section id="visitors" hidden>
-    <h2>Visitors Around the World <span class="visitors-since">(since 2026.09.25)</span></h2>
-    <div class="visitor-map" id="visitor-map"></div>
-  </section>
+  <!-- Visitor tracking (MapMyVisitors). Display is intentionally disabled; the
+       widget script is still loaded below so visits keep being recorded and can
+       be reviewed on the MapMyVisitors dashboard. -->
+  <div id="visitor-map" hidden aria-hidden="true"></div>
 
   <p class="foot">© Junhyun Park &middot; Last updated October 2026</p>
 
@@ -501,15 +497,13 @@
     });
   })();
 
-  // Load the third-party visitor map after the page has fully rendered, so a slow or
-  // unreachable map service never blocks rendering. Colors follow the site palette:
-  // cl = land, co = ocean, cmo = past visits, cmn = recent visits, ct = text.
+  // Visitor tracking only: load the MapMyVisitors widget after the page has fully
+  // rendered so a slow or unreachable service never blocks rendering. The host
+  // element stays hidden, so nothing is displayed; the request still records the visit.
   (function () {
     const MAP_KEY = 'rtcW30H8cOm7EMYsgHpyHafIV6kPma_w8ZPEKe-XCek';  // `d=` value from the MapMyVisitors embed code
-    const section = document.getElementById('visitors');
     const map = document.getElementById('visitor-map');
-    if (!MAP_KEY || !section || !map) return;
-    section.hidden = false;
+    if (!MAP_KEY || !map) return;
     window.addEventListener('load', function () {
       const s = document.createElement('script');
       s.id = 'mapmyvisitors';
@@ -575,52 +569,6 @@
     show(0);
   })();
 
-  (function () {
-    const typeButtons = document.querySelectorAll('.pub-filter-type button');
-    const domainButtons = document.querySelectorAll('.pub-filter-domain button');
-    const pubs = document.querySelectorAll('#publications .pub');
-    const headers = document.querySelectorAll('#publications h3');
-    if (!typeButtons.length && !domainButtons.length) return;
-
-    let activeType = 'all';
-    let activeDomain = 'all';
-
-    function apply() {
-      pubs.forEach(function (pub) {
-        const type = pub.dataset.type || '';
-        const tags = (pub.dataset.tags || '').split(/\s+/);
-        const typeMatch = activeType === 'all' || type === activeType;
-        const domainMatch = activeDomain === 'all' || tags.indexOf(activeDomain) !== -1;
-        pub.hidden = !(typeMatch && domainMatch);
-      });
-      headers.forEach(function (h) {
-        let next = h.nextElementSibling;
-        while (next && !next.classList.contains('pubs')) next = next.nextElementSibling;
-        if (!next) return;
-        const anyVisible = Array.prototype.some.call(
-          next.querySelectorAll('.pub'),
-          function (p) { return !p.hidden; }
-        );
-        h.hidden = !anyVisible;
-        next.hidden = !anyVisible;
-      });
-    }
-
-    function bind(buttons, setter) {
-      buttons.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          buttons.forEach(function (b) {
-            b.setAttribute('aria-pressed', b === btn ? 'true' : 'false');
-          });
-          setter(btn.dataset.filter);
-          apply();
-        });
-      });
-    }
-
-    bind(typeButtons, function (v) { activeType = v; });
-    bind(domainButtons, function (v) { activeDomain = v; });
-  })();
 </script>
 </body>
 </html>
